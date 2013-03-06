@@ -7,11 +7,11 @@
 
 #include "Core.h"
 
-int main(int argc, char** args)
+int main( int argc, char** args )
 {
 	int ret = 0;
 
-	if ( Core::initalize() )
+	if ( Core::initalize( "../media/" ) )
 	{
 		Core::getInstance().start();
 	}
