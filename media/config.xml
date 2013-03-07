@@ -6,6 +6,7 @@
 	<subSystemList>
 		<!-- order is important! physics first because of async -->
 		<subSystem file="physics/config.xml"/>
+    <subSystem file="graphics/config.xml"/>
 	</subSystemList>
 	
 	<control target="Camera"/>
