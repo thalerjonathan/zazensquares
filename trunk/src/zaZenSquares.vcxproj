@@ -85,6 +85,11 @@ copy $(ZAZENGINE_PATH)\libs\lib\*.pdb $(SolutionDir)$(Configuration)\</Command>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\media\config.xml" />
+    <None Include="..\media\graphics\config.xml" />
+    <None Include="..\media\physics\config.xml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -13,10 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Ressourcendateien\config">
+      <UniqueIdentifier>{f150d8bf-af96-4dd6-8068-fd9698327264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\config\graphics">
+      <UniqueIdentifier>{199be56f-4db3-407c-ab54-3cc956adaadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\config\physics">
+      <UniqueIdentifier>{07b67b72-a102-4c98-994a-949c6937e816}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\media\config.xml">
+      <Filter>Ressourcendateien\config</Filter>
+    </None>
+    <None Include="..\media\graphics\config.xml">
+      <Filter>Ressourcendateien\config\graphics</Filter>
+    </None>
+    <None Include="..\media\physics\config.xml">
+      <Filter>Ressourcendateien\config\physics</Filter>
+    </None>
   </ItemGroup>
 </Project>
