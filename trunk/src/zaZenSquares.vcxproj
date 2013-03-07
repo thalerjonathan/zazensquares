@@ -59,8 +59,7 @@ copy $(ZAZENGINE_PATH)\Debug\*.dll $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\Debug\*.dll $(SolutionDir)$(Configuration)\
 copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)$(Configuration)\
-copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\
-copy $(ZAZENGINE_PATH)\libs\lib\*.pdb $(SolutionDir)$(Configuration)\</Command>
+copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

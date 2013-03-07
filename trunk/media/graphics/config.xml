@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <subSystem type="graphics" file="../bin/ZazenGraphics.dll">
+  <openglConfig majorVersion="3" minorVersion="0"/>
 </subSystem>
