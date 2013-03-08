@@ -13,7 +13,7 @@ int main( int argc, char** args )
 
 	if ( Core::initalize( "../media/" ) )
 	{
-		Core::getInstance().start();
+		Core::getRef().start();
 	}
 	else
 	{
