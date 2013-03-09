@@ -56,9 +56,10 @@
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\Debug\*.dll $(SolutionDir)..\bin\
-copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\Debug\*.dll $(SolutionDir)$(Configuration)\
+copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)$(Configuration)\
+copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -87,6 +88,7 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
   <ItemGroup>
     <None Include="..\media\config.xml" />
     <None Include="..\media\graphics\config.xml" />
+    <None Include="..\media\input\config.xml" />
     <None Include="..\media\physics\config.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
