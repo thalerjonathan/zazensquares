@@ -86,6 +86,7 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\media\audio\config.xml" />
     <None Include="..\media\config.xml" />
     <None Include="..\media\graphics\config.xml" />
     <None Include="..\media\input\config.xml" />

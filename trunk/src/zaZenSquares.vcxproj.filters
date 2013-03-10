@@ -25,6 +25,9 @@
     <Filter Include="Ressourcendateien\config\input">
       <UniqueIdentifier>{f0b661a6-98b7-4aa1-9dea-a390fa66ca34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\config\audio">
+      <UniqueIdentifier>{5d04ff38-7f62-45b5-ab12-0ed35bad08c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -43,6 +46,9 @@
     </None>
     <None Include="..\media\input\config.xml">
       <Filter>Ressourcendateien\config\input</Filter>
+    </None>
+    <None Include="..\media\audio\config.xml">
+      <Filter>Ressourcendateien\config\audio</Filter>
     </None>
   </ItemGroup>
 </Project>
