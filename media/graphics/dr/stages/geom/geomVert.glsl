@@ -5,6 +5,7 @@ in vec3 in_vertNorm;
 in vec2 in_textureCoord;
 
 out vec4 ex_normal;
+out vec2 ex_textureCoord;
 
 layout(shared) uniform transforms
 {
@@ -29,4 +30,7 @@ void main()
 	gl_Position = modelViewProjection_Matrix * vec4( in_vertPos, 1.0 );
 	// lighting is applied in world-space (model-space)
 	ex_normal = normalsModel_Matrix * vec4( in_vertNorm, 0.0 );
+	
+	// TODO handle right
+	ex_textureCoord = in_textureCoord;
 }
