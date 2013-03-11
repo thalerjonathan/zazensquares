@@ -34,6 +34,8 @@
 				<instance mesh="../media/graphics/models/basic_objects/teapot.3DS" material="BluePlastic"/>
 				
 				<orientation x="0" y="0" z="8" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="20" heading="0" pitch="0"/>
 			</graphics>
 		</object>
 		
@@ -50,6 +52,8 @@
 				<instance mesh="../media/graphics/models/basic_objects/knot.3DS" material="GreenPlastic"/>
 				
 				<orientation x="50" y="15" z="50" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="30" heading="30" pitch="30"/>
 			</graphics>
 		</object>
 		-->
