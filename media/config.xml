@@ -53,7 +53,7 @@
 				
 				<orientation x="50" y="15" z="50" roll="0" heading="0" pitch="0"/>
 
-        <animation roll="30" heading="30" pitch="30"/>
+        <animation roll="70" heading="70" pitch="70"/>
 			</graphics>
 		</object>
 		-->
