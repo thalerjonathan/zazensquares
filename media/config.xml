@@ -27,6 +27,10 @@
 				
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
 			</graphics>
+
+      <physics>
+        <type id="PLANE" static="true"/>
+      </physics>
 		</object>
 		
 		<object name="Teapot">
@@ -45,6 +49,10 @@
 				
 				<orientation x="-30" y="13" z="30" roll="0" heading="0" pitch="0"/>
 			</graphics>
+
+      <physics>
+        <type id="SPHERE" px="-30" py="13" pz="30" mass="1" r="5"/>
+      </physics>
 		</object>
 		
 		<object name="Knot">
