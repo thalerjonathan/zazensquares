@@ -84,6 +84,7 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="logic\objectclasses\GOUserControl.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +95,9 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     <None Include="..\media\graphics\config.xml" />
     <None Include="..\media\input\config.xml" />
     <None Include="..\media\physics\config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logic\objectclasses\GOUserControl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

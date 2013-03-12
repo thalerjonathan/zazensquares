@@ -10,11 +10,18 @@
     <!--<subSystem file="audio/config.xml"/>-->
 	</subSystemList>
 	
-	<control target="Camera"/>
+  <!-- TODO will be useless -->
+	<control target="Camera"/> 
 		
 	<objectList>
-		<object name="Camera">
-			<graphics>
+		<object name="Camera" class="UserControl">
+      <receiveEvents>
+        <event id="KEY_PRESSED"/>
+        <event id="KEY_RELEASED"/>
+        <event id="MOUSE_MOVED"/>
+      </receiveEvents>
+			
+      <graphics>
 				<camera view="PROJ" fov="45"/>
 				
 				<orientation x="0" y="-100" z="20" roll="0" heading="0" pitch="90"/>
@@ -43,7 +50,12 @@
 			</graphics>
 		</object>
 		
-		<object name="GeoSphere">
+		<object name="GeoSphere" class="BouncySphere">
+      <receiveEvents>
+        <event id="COLLIDES_WITH"/>
+        <event id="ROLLS_ON"/>
+      </receiveEvents>
+      
 			<graphics>
 				<instance mesh="../media/graphics/models/basic_objects/geoSphere.3DS" material="YellowPlastic"/>
 				
@@ -51,7 +63,7 @@
 			</graphics>
 
       <physics>
-        <type id="SPHERE" px="-30" py="13" pz="30" mass="1" r="5"/>
+        <type id="SPHERE" px="-30" py="13" pz="50" mass="1" r="1"/>
       </physics>
 		</object>
 		
