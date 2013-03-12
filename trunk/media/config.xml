@@ -7,7 +7,7 @@
 		<subSystem file="physics/config.xml"/>
     <subSystem file="graphics/config.xml"/>
     <subSystem file="input/config.xml"/>
-    <!--<subSystem file="audio/config.xml"/>-->
+    <subSystem file="audio/config.xml"/>
 	</subSystemList>
 	
   <!-- TODO will be useless -->
@@ -64,8 +64,11 @@
 
         <animation roll="70" heading="70" pitch="70"/>
 			</graphics>
+
+      <audio>
+        <sound x="50" y="15" z="50" loop="true" file="../media/audio/beep.ogg"/>
+      </audio>
 		</object>
-		-->
     
 		<object name="Light1Spot">
 			<graphics>

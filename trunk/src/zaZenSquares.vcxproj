@@ -95,7 +95,9 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     </None>
     <None Include="..\media\graphics\config.xml" />
     <None Include="..\media\input\config.xml" />
-    <None Include="..\media\physics\config.xml" />
+    <None Include="..\media\physics\config.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logic\objectclasses\GOUserControl.h" />
