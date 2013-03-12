@@ -7,11 +7,14 @@
 
 #include "Core.h"
 
+#include "logic/ZazenSquaresGOFactory.h";
+
 int main( int argc, char** args )
 {
 	int ret = 0;
+	IGameObjectFactory* objectFactory = new ZazenSquaresGOFactory();
 
-	if ( Core::initalize( "../media/" ) )
+	if ( Core::initalize( "../media/", objectFactory ) )
 	{
 		Core::getRef().start();
 	}

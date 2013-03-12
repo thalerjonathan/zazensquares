@@ -52,7 +52,7 @@
       <Command>
       </Command>
       <Message>Copy</Message>
-      <Outputs>nonexistent.bat</Outputs>
+      <Outputs>nonexistenttt.bat</Outputs>
     </CustomBuildStep>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)..\bin\
@@ -85,6 +85,7 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="logic\objectclasses\GOUserControl.cpp" />
+    <ClCompile Include="logic\ZazenSquaresGOFactory.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +99,7 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logic\objectclasses\GOUserControl.h" />
+    <ClInclude Include="logic\ZazenSquaresGOFactory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

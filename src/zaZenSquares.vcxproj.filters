@@ -48,6 +48,9 @@
     <ClCompile Include="logic\objectclasses\GOUserControl.cpp">
       <Filter>Quelldateien\logic\objectclasses</Filter>
     </ClCompile>
+    <ClCompile Include="logic\ZazenSquaresGOFactory.cpp">
+      <Filter>Quelldateien\logic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\media\config.xml">
@@ -69,6 +72,9 @@
   <ItemGroup>
     <ClInclude Include="logic\objectclasses\GOUserControl.h">
       <Filter>Headerdateien\logic\objectclasses</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\ZazenSquaresGOFactory.h">
+      <Filter>Headerdateien\logic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
