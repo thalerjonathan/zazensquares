@@ -30,7 +30,7 @@
 			</graphics>
 
       <physics>
-        <type id="PLANE" static="true"/>
+        <type id="PLANE" dx="0" dy="0" dz="1" d="0" static="true"/>
       </physics>
 		</object>
 		
