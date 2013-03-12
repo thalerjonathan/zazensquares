@@ -3,7 +3,7 @@
 
 #include "ZazenGameObject.h"
 
-class GOUserControl : ZazenGameObject
+class GOUserControl : public ZazenGameObject
 {
  public:
 	GOUserControl();
