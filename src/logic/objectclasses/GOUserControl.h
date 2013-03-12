@@ -10,4 +10,4 @@ class GOUserControl : ZazenGameObject
 	virtual ~GOUserControl();
 };
 
-#endif /* */
+#endif /* GOUSERCONTROL_H */
