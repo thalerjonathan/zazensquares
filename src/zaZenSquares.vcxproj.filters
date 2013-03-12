@@ -28,10 +28,25 @@
     <Filter Include="Ressourcendateien\config\audio">
       <UniqueIdentifier>{5d04ff38-7f62-45b5-ab12-0ed35bad08c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Quelldateien\logic">
+      <UniqueIdentifier>{ce88de98-dd17-4eb5-b1cf-e75ad5c45420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\logic\objectclasses">
+      <UniqueIdentifier>{00997536-71d3-4b3c-a64f-60404816023a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\logic">
+      <UniqueIdentifier>{c578d865-e3cb-47a8-9e63-6a92f29e1c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\logic\objectclasses">
+      <UniqueIdentifier>{8b590ada-9ffa-4625-83cb-a9cd947d48d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\objectclasses\GOUserControl.cpp">
+      <Filter>Quelldateien\logic\objectclasses</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,5 +65,10 @@
     <None Include="..\media\audio\config.xml">
       <Filter>Ressourcendateien\config\audio</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logic\objectclasses\GOUserControl.h">
+      <Filter>Headerdateien\logic\objectclasses</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
