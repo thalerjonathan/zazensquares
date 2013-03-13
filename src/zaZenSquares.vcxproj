@@ -51,7 +51,7 @@
     <CustomBuildStep>
       <Command> </Command>
       <Message>Copy</Message>
-      <Outputs>nonexistenttt.bat</Outputs>
+      <Outputs>nonexiste.bat</Outputs>
     </CustomBuildStep>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)..\bin\
