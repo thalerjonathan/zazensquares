@@ -93,21 +93,11 @@ copy $(ZAZENGINE_PATH)\pipeline\*.* $(SolutionDir)..\pipeline\</Command>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\media\audio\config.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="..\media\config.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="..\media\graphics\config.xml" />
-    <None Include="..\media\input\config.xml" />
-    <None Include="..\media\physics\config.xml">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="logic\objectclasses\GOUserControl.h" />
     <ClInclude Include="logic\ZazenSquaresGOFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\config\config.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
