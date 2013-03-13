@@ -62,10 +62,8 @@ copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)$(Configuration)\
 copy $(ZAZENGINE_PATH)\src\Debug\*.pdb $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\src\Debug\*.pdb $(SolutionDir)$(Configuration)\
-mkdir $(SolutionDir)$..\config\
-mkdir $(SolutionDir)..\pipeline\
-copy $(ZAZENGINE_PATH)\config\*.* $(SolutionDir)$..\config\
-copy $(ZAZENGINE_PATH)\pipeline\*.* $(SolutionDir)..\pipeline\</Command>
+xcopy $(ZAZENGINE_PATH)\config\ $(SolutionDir)..\config\ /S
+xcopy $(ZAZENGINE_PATH)\pipeline\ $(SolutionDir)..\pipeline\ /S</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
