@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<config>
+	<coreScript file="scripts/core/core.lua"/>
+
+	<subSystemList>
+		<subSystem file="physics/config.xml"/>
+    <subSystem file="graphics/config.xml"/>
+    <subSystem file="input/config.xml"/>
+    <subSystem file="audio/config.xml"/>
+	</subSystemList>
+	
+	<control target="Camera"/> 
+		
+	<objectList>
+		<object name="Camera" class="UserControl">
+      <graphics>
+				<camera view="PROJ" fov="45"/>
+				
+				<orientation x="0" y="-100" z="20" roll="0" heading="0" pitch="90"/>
+			</graphics>
+
+      <audio>
+        <listener x="0" y="-100" z="20"/>
+      </audio>      
+		</object>
+
+    <object name="Floor">
+			<graphics>
+				<instance mesh="../media/graphics/models/basic_objects/floor_large.3DS" material="WhitePlastic"/>
+				
+				<orientation x="0" y="0" z="-12" roll="0" heading="0" pitch="0"/>
+			</graphics>
+
+      <physics>
+        <type id="PLANE" dx="0" dy="0" dz="1" d="0" static="true"/>
+      </physics>
+		</object>
+		
+		<object name="Teapot">
+			<graphics>
+				<instance mesh="../media/graphics/models/basic_objects/teapot.3DS" material="BluePlastic"/>
+				
+				<orientation x="0" y="0" z="-10" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="40" heading="0" pitch="0"/>
+			</graphics>
+		</object>
+		
+		<object name="GeoSphere" class="BouncySphere">
+			<graphics>
+				<instance mesh="../media/graphics/models/basic_objects/geoSphere.3DS" material="YellowPlastic"/>
+				
+				<orientation x="-30" y="13" z="70" roll="0" heading="0" pitch="0"/>
+			</graphics>
+
+      <physics>
+        <type id="SPHERE" px="-30" py="13" pz="70" mass="1" r="1"/>
+      </physics>
+
+      <audio>
+        <sound x="-30" y="13" z="70" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="../media/audio/bounce.wav"/>
+      </audio>
+		</object>
+		
+		<object name="Knot">
+			<graphics>
+				<instance mesh="../media/graphics/models/basic_objects/knot.3DS" material="GreenPlastic"/>
+				
+				<orientation x="50" y="15" z="50" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="-110" heading="110" pitch="110"/>
+			</graphics>
+
+      <audio>
+        <sound x="50" y="15" z="50" minDist="1.0" maxDist="500.0" loop="true" file="../media/audio/rotation.wav"/>
+      </audio>
+		</object>
+    
+		<object name="Light1Spot">
+			<graphics>
+				<light type="SPOT"/>
+				
+				<orientation x="0" y="80" z="120" roll="0" heading="0" pitch="-30"/>
+				
+				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/> 
+			</graphics>
+		</object>
+		
+		<!--
+		<object name="Light2Directional">
+			<graphics>
+				<light type="DIRECTIONAL"/>
+				
+				<orientation x="0" y="-3" z="0" roll="0" heading="0" pitch="0"/>
+				
+				<shadowing cast="true" resMapX="2048" resMapY="2048"/> 
+			</graphics>
+		</object>
+		<object name="Light3Point">
+			<graphics>
+				<light type="POINT"/>
+				
+				<orientation x="0" y="-3" z="0" roll="0" heading="0" pitch="0"/>
+				
+				<shadowing cast="true" resMapX="400" resMapY="400"/> 
+			</graphics>
+		</object>
+		-->
+	</objectList>
+</config>
