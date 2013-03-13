@@ -49,8 +49,7 @@
       <AdditionalDependencies>zaZenCore.lib;libboost_thread-vc100-mt-gd-1_51.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>
-      </Command>
+      <Command> </Command>
       <Message>Copy</Message>
       <Outputs>nonexistenttt.bat</Outputs>
     </CustomBuildStep>
