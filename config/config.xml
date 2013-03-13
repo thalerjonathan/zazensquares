@@ -27,7 +27,7 @@
 
     <object name="Floor">
 			<graphics>
-				<instance mesh="../media/graphics/models/basic_objects/floor_large.3DS" material="WhitePlastic"/>
+				<instance mesh="floor_large.3DS" material="WhitePlastic"/>
 				
 				<orientation x="0" y="0" z="-12" roll="0" heading="0" pitch="0"/>
 			</graphics>
@@ -39,7 +39,7 @@
 		
 		<object name="Teapot">
 			<graphics>
-				<instance mesh="../media/graphics/models/basic_objects/teapot.3DS" material="BluePlastic"/>
+				<instance mesh="teapot.3DS" material="BluePlastic"/>
 				
 				<orientation x="0" y="0" z="-10" roll="0" heading="0" pitch="0"/>
 
@@ -49,7 +49,7 @@
 		
 		<object name="GeoSphere" class="BouncySphere">
 			<graphics>
-				<instance mesh="../media/graphics/models/basic_objects/geoSphere.3DS" material="YellowPlastic"/>
+				<instance mesh="geoSphere.3DS" material="YellowPlastic"/>
 				
 				<orientation x="-30" y="13" z="70" roll="0" heading="0" pitch="0"/>
 			</graphics>
@@ -59,13 +59,13 @@
       </physics>
 
       <audio>
-        <sound x="-30" y="13" z="70" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="../media/audio/bounce.wav"/>
+        <sound x="-30" y="13" z="70" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
       </audio>
 		</object>
 		
 		<object name="Knot">
 			<graphics>
-				<instance mesh="../media/graphics/models/basic_objects/knot.3DS" material="GreenPlastic"/>
+				<instance mesh="knot.3DS" material="GreenPlastic"/>
 				
 				<orientation x="50" y="15" z="50" roll="0" heading="0" pitch="0"/>
 
@@ -73,7 +73,7 @@
 			</graphics>
 
       <audio>
-        <sound x="50" y="15" z="50" minDist="1.0" maxDist="500.0" loop="true" file="../media/audio/rotation.wav"/>
+        <sound x="50" y="15" z="50" minDist="1.0" maxDist="500.0" loop="true" file="rotation.wav"/>
       </audio>
 		</object>
     

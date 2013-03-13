@@ -14,7 +14,7 @@ int main( int argc, char** args )
 	int ret = 0;
 	IGameObjectFactory* objectFactory = new ZazenSquaresGOFactory();
 
-	if ( Core::initalize( "../media/", objectFactory ) )
+	if ( Core::initalize( "../config/", objectFactory ) )
 	{
 		Core::getRef().start();
 	}

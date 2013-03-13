@@ -13,21 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Ressourcendateien\config">
-      <UniqueIdentifier>{f150d8bf-af96-4dd6-8068-fd9698327264}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Ressourcendateien\config\graphics">
-      <UniqueIdentifier>{199be56f-4db3-407c-ab54-3cc956adaadb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Ressourcendateien\config\physics">
-      <UniqueIdentifier>{07b67b72-a102-4c98-994a-949c6937e816}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Ressourcendateien\config\input">
-      <UniqueIdentifier>{f0b661a6-98b7-4aa1-9dea-a390fa66ca34}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Ressourcendateien\config\audio">
-      <UniqueIdentifier>{5d04ff38-7f62-45b5-ab12-0ed35bad08c4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Quelldateien\logic">
       <UniqueIdentifier>{ce88de98-dd17-4eb5-b1cf-e75ad5c45420}</UniqueIdentifier>
     </Filter>
@@ -53,28 +38,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\media\config.xml">
-      <Filter>Ressourcendateien\config</Filter>
-    </None>
-    <None Include="..\media\graphics\config.xml">
-      <Filter>Ressourcendateien\config\graphics</Filter>
-    </None>
-    <None Include="..\media\physics\config.xml">
-      <Filter>Ressourcendateien\config\physics</Filter>
-    </None>
-    <None Include="..\media\input\config.xml">
-      <Filter>Ressourcendateien\config\input</Filter>
-    </None>
-    <None Include="..\media\audio\config.xml">
-      <Filter>Ressourcendateien\config\audio</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="logic\objectclasses\GOUserControl.h">
       <Filter>Headerdateien\logic\objectclasses</Filter>
     </ClInclude>
     <ClInclude Include="logic\ZazenSquaresGOFactory.h">
       <Filter>Headerdateien\logic</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\config\config.xml">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
 </Project>
