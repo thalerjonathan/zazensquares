@@ -58,6 +58,10 @@
       <physics>
         <type id="SPHERE" px="-30" py="13" pz="70" mass="1" r="1"/>
       </physics>
+
+      <audio>
+        <sound x="-30" y="13" z="70" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="../media/audio/bounce.wav"/>
+      </audio>
 		</object>
 		
 		<object name="Knot">
