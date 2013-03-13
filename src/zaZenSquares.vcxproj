@@ -49,7 +49,8 @@
       <AdditionalDependencies>zaZenCore.lib;libboost_thread-vc100-mt-gd-1_51.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command> </Command>
+      <Command>
+      </Command>
       <Message>Copy</Message>
       <Outputs>nonexiste.bat</Outputs>
     </CustomBuildStep>
@@ -88,7 +89,9 @@ copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\media\audio\config.xml" />
+    <None Include="..\media\audio\config.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="..\media\config.xml">
       <SubType>Designer</SubType>
     </None>
