@@ -41,11 +41,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ZAZENGINE_PATH)/Impl/core;$(ZAZENGINE_PATH)/IFaces;$(ZAZENGINE_PATH)/libs/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ZAZENGINE_PATH)/src/Impl/core;$(ZAZENGINE_PATH)/src/IFaces;$(ZAZENGINE_PATH)/src/libs/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(BOOST_PATH)/lib;$(ZAZENGINE_PATH)/Debug;$(ZAZENGINE_PATH)/libs/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(BOOST_PATH)/lib;$(ZAZENGINE_PATH)/src/Debug;$(ZAZENGINE_PATH)/libs/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>zaZenCore.lib;libboost_thread-vc100-mt-gd-1_51.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
@@ -56,12 +56,16 @@
     </CustomBuildStep>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)..\bin\
-copy $(ZAZENGINE_PATH)\Debug\*.dll $(SolutionDir)..\bin\
-copy $(ZAZENGINE_PATH)\Debug\*.dll $(SolutionDir)$(Configuration)\
-copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)..\bin\
-copy $(ZAZENGINE_PATH)\libs\lib\*.dll $(SolutionDir)$(Configuration)\
-copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)..\bin\
-copy $(ZAZENGINE_PATH)\Debug\*.pdb $(SolutionDir)$(Configuration)\</Command>
+copy $(ZAZENGINE_PATH)\src\Debug\*.dll $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\Debug\*.dll $(SolutionDir)$(Configuration)\
+copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)$(Configuration)\
+copy $(ZAZENGINE_PATH)\src\Debug\*.pdb $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\Debug\*.pdb $(SolutionDir)$(Configuration)\
+mkdir $(SolutionDir)$..\config\
+mkdir $(SolutionDir)..\pipeline\
+copy $(ZAZENGINE_PATH)\config\*.* $(SolutionDir)$..\config\
+copy $(ZAZENGINE_PATH)\pipeline\*.* $(SolutionDir)..\pipeline\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
