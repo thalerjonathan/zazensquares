@@ -70,7 +70,7 @@
 			</graphics>
 
       <audio>
-        <sound x="50" y="15" z="50" minDist="1.0" maxDist="100.0" loop="true" file="../media/audio/rotation.wav"/>
+        <sound x="50" y="15" z="50" minDist="1.0" maxDist="500.0" loop="true" file="../media/audio/rotation.wav"/>
       </audio>
 		</object>
     
