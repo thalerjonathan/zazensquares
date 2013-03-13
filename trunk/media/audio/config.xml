@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <subSystem type="audio" file="../bin/zaZenFMod.dll">
-  <music file="../media/audio/firestarter.mp3"/>
+  <!--<music file="../media/audio/firestarter.mp3"/>-->
 </subSystem>
