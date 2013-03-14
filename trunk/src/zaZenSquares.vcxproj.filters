@@ -25,6 +25,15 @@
     <Filter Include="Headerdateien\logic\objectclasses">
       <UniqueIdentifier>{8b590ada-9ffa-4625-83cb-a9cd947d48d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Config">
+      <UniqueIdentifier>{859e3d9d-a5d1-450c-9413-197f1b2f5956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Media">
+      <UniqueIdentifier>{f3679253-49eb-43b1-9540-b74a011d2376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Media\Materials">
+      <UniqueIdentifier>{82fc5e62-f0db-4226-b36a-1975da1c3efb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -47,7 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\config\config.xml">
-      <Filter>Ressourcendateien</Filter>
+      <Filter>Ressourcendateien\Config</Filter>
+    </None>
+    <None Include="..\media\materials\materials.xml">
+      <Filter>Ressourcendateien\Media\Materials</Filter>
     </None>
   </ItemGroup>
 </Project>
