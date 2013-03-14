@@ -47,7 +47,7 @@
 			</graphics>
 		</object>
 		
-		<object name="GeoSphere" class="BouncySphere">
+		<object name="GeoSphere1" class="BouncySphere">
 			<graphics>
 				<instance mesh="geoSphere.3DS" material="YellowPlastic"/>
 				
@@ -62,7 +62,23 @@
         <sound x="-30" y="13" z="70" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
       </audio>
 		</object>
-		
+
+    <object name="GeoSphere2" class="BouncySphere">
+      <graphics>
+        <instance mesh="geoSphere.3DS" material="YellowPlastic"/>
+
+        <orientation x="-50" y="53" z="30" roll="0" heading="0" pitch="0"/>
+      </graphics>
+
+      <physics>
+        <type id="SPHERE" px="-50" py="53" pz="30" mass="1" r="1"/>
+      </physics>
+
+      <audio>
+        <sound x="-50" y="53" z="30" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+      </audio>
+    </object>
+    
 		<object name="Knot">
 			<graphics>
 				<instance mesh="knot.3DS" material="GreenPlastic"/>
