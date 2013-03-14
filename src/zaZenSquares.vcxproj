@@ -36,7 +36,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildAfterTargets>blbla</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildBeforeTargets>blbla</CustomBuildBeforeTargets>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -52,7 +57,8 @@
       <Command>
       </Command>
       <Message>Copy</Message>
-      <Outputs>nonexiste.bat</Outputs>
+      <Outputs>blbla</Outputs>
+      <Inputs>blbla</Inputs>
     </CustomBuildStep>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)..\bin\
@@ -62,8 +68,8 @@ copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)$(Configuration)\
 copy $(ZAZENGINE_PATH)\src\Debug\*.pdb $(SolutionDir)..\bin\
 copy $(ZAZENGINE_PATH)\src\Debug\*.pdb $(SolutionDir)$(Configuration)\
-xcopy $(ZAZENGINE_PATH)\config\ $(SolutionDir)..\config\ /S
-xcopy $(ZAZENGINE_PATH)\pipeline\ $(SolutionDir)..\pipeline\ /S</Command>
+xcopy $(ZAZENGINE_PATH)\config $(SolutionDir)..\config /S /C /Q /E /Y
+xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
