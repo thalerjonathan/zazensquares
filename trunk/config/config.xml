@@ -80,8 +80,9 @@
 		<object name="Light1Spot">
 			<graphics>
 				<light type="SPOT"/>
-				
-				<orientation x="0" y="80" z="120" roll="0" heading="0" pitch="-30"/>
+
+        <!--<orientation x="0" y="-100" z="20" roll="0" heading="0" pitch="90"/>-->
+				<orientation x="0" y="0" z="20" roll="0" heading="0" pitch="-30"/>
 				
 				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/> 
 			</graphics>
