@@ -25,15 +25,14 @@
 		</type>
 	</material>
 	
-	<!-- EXAMPLES
-	<material name="WoodFloor">
+	<material name="Cross">
 		<type id="LAMBERTIAN">
-			<diffuseColor1 file="media/graphics/textures/woodFloorBase.tga"/>
-			<diffuseColor2 file="media/graphics/textures/woodFloorFine.tga"/>
-			<normalMap file="media/graphics/textures/woodFloorNormals.tga"/>
+			<diffuseColor file="cross_diffuse.jpg"/>
+			<normalMap file="cross_normal.jpg"/>
 		</type>
 	</material>
 
+  <!-- EXAMPLES
 	<material name="StoneFloor">
 		<type id="PHONG">
 			<diffuseColor1 file="media/graphics/textures/stoneFloorBase.tga"/>

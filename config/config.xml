@@ -13,7 +13,16 @@
 	<control target="Camera"/> 
 		
 	<objectList>
-		<object name="Camera" class="UserControl">
+    <object name="Scene">
+      <graphics>
+        <scene>
+          <ambientLighting r="1.0" g="1.0" b="1.0"/>
+          <skybox enabled="true"/>
+        </scene>
+      </graphics>  
+    </object>
+		
+    <object name="Camera" class="UserControl">
       <graphics>
 				<camera view="PROJ" fov="45"/>
 				
@@ -81,10 +90,9 @@
 			<graphics>
 				<light type="SPOT"/>
 
-        <!--<orientation x="0" y="-100" z="20" roll="0" heading="0" pitch="90"/>-->
 				<orientation x="0" y="0" z="20" roll="0" heading="0" pitch="-30"/>
 				
-				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/> 
+				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/>
 			</graphics>
 		</object>
 		
