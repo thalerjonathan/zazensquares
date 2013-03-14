@@ -13,15 +13,6 @@
 	<control target="Camera"/> 
 		
 	<objectList>
-    <object name="Scene">
-      <graphics>
-        <scene>
-          <ambientLighting r="1.0" g="1.0" b="1.0"/>
-          <skybox enabled="true"/>
-        </scene>
-      </graphics>  
-    </object>
-		
     <object name="Camera" class="UserControl">
       <graphics>
 				<camera view="PROJ" fov="45"/>
