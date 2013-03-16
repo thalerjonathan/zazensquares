@@ -16,7 +16,7 @@
     <object name="Camera" class="UserControl">
       <graphics>
 				<camera view="PROJ" fov="45"/>
-				
+
 				<orientation x="0" y="-100" z="20" roll="0" heading="0" pitch="90"/>
 			</graphics>
 
@@ -49,7 +49,7 @@
 		
 		<object name="GeoSphere1" class="BouncySphere">
 			<graphics>
-				<instance mesh="geoSphere.3DS" material="DiffuseYellowPlastic"/>
+				<instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
 				
 				<orientation x="-30" y="13" z="70" roll="0" heading="0" pitch="0"/>
 			</graphics>
