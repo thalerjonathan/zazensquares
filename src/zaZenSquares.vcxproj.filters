@@ -34,6 +34,21 @@
     <Filter Include="Ressourcendateien\Media\Materials">
       <UniqueIdentifier>{82fc5e62-f0db-4226-b36a-1975da1c3efb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline">
+      <UniqueIdentifier>{7c565b79-c040-46b8-889c-1b821350e595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR">
+      <UniqueIdentifier>{babe097e-b0f4-4952-ad26-33cf3a48296b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages">
+      <UniqueIdentifier>{9233842b-2926-483d-9463-4b7039798d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Geom">
+      <UniqueIdentifier>{dd5c2000-4012-4753-b83a-747ca082d40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Light">
+      <UniqueIdentifier>{b29fed0b-01a2-42c4-9d8d-f9a57b684923}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -60,6 +75,18 @@
     </None>
     <None Include="..\media\materials\materials.xml">
       <Filter>Ressourcendateien\Media\Materials</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\geom\geomFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\geom\geomVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\lighting\lightFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
     </None>
   </ItemGroup>
 </Project>

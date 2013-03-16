@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <materials>
-	<material name="YellowPlastic">
-		<type id="LAMBERTIAN">
+	<material name="PhongYellowPlastic">
+		<type id="PHONG">
 			<color r="1.0" g="1.0" b="0.0"/>
 		</type>
 	</material>
-	
+
+  <material name="DiffuseYellowPlastic">
+    <type id="DIFFUSE">
+      <color r="1.0" g="1.0" b="0.0"/>
+    </type>
+  </material>
+  
 	<material name="GreenPlastic">
 		<type id="LAMBERTIAN">
 			<color r="0.0" g="1.0" b="0.0"/>
