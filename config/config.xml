@@ -27,7 +27,7 @@
 
     <object name="Floor">
 			<graphics>
-				<instance mesh="floor_large.3DS" material="WhitePlastic"/>
+				<instance mesh="floor_large.3DS" material="Cross"/>
 				
 				<orientation x="0" y="0" z="-12" roll="0" heading="0" pitch="0"/>
 			</graphics>
