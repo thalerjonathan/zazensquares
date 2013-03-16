@@ -7,7 +7,7 @@
 
 #include "Core.h"
 
-#include "logic/ZazenSquaresGOFactory.h";
+#include "logic/ZazenSquaresGOFactory.h"
 
 int main( int argc, char** args )
 {
