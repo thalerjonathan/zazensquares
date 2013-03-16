@@ -105,7 +105,13 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\config\config.xml">
       <SubType>Designer</SubType>
     </None>
-    <None Include="..\media\materials\materials.xml" />
+    <None Include="..\media\materials\materials.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\pipeline\dr\stages\geom\geomFrag.glsl" />
+    <None Include="..\pipeline\dr\stages\geom\geomVert.glsl" />
+    <None Include="..\pipeline\dr\stages\lighting\lightFrag.glsl" />
+    <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

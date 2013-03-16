@@ -49,7 +49,7 @@
 		
 		<object name="GeoSphere1" class="BouncySphere">
 			<graphics>
-				<instance mesh="geoSphere.3DS" material="YellowPlastic"/>
+				<instance mesh="geoSphere.3DS" material="DiffuseYellowPlastic"/>
 				
 				<orientation x="-30" y="13" z="70" roll="0" heading="0" pitch="0"/>
 			</graphics>
@@ -65,7 +65,7 @@
 
     <object name="GeoSphere2" class="BouncySphere">
       <graphics>
-        <instance mesh="geoSphere.3DS" material="YellowPlastic"/>
+        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
 
         <orientation x="-50" y="53" z="30" roll="0" heading="0" pitch="0"/>
       </graphics>
