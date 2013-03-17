@@ -37,16 +37,13 @@
 		</type>
 	</material>
 
-  <!-- EXAMPLES
 	<material name="StoneFloor">
-		<type id="PHONG">
-			<diffuseColor1 file="media/graphics/textures/stoneFloorBase.tga"/>
-			<diffuseColor2 file="media/graphics/textures/stoneFloorFine.tga"/>
-			<diffuseColor3 file="media/graphics/textures/stoneFloorGrain.tga"/>
-			<normalMap file="media/graphics/textures/stoneFloorNormals.tga"/>
+    <type id="LAMBERTIAN">
+			<diffuseColor file="brick.jpg"/>
 		</type>
 	</material>
 
+  <!-- EXAMPLES
 	<material name="ChurchGlass">
 		<type id="TRANSPARENT">
 			<diffuseColor1 file="media/graphics/textures/churchWindowColor.tga"/>
