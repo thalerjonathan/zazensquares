@@ -32,9 +32,8 @@
 	</material>
 	
 	<material name="Cross">
-		<type id="PHONG">
+		<type id="LAMBERTIAN">
 			<diffuseColor file="cross_diffuse.jpg"/>
-			<normalMap file="cross_normal.jpg"/>
 		</type>
 	</material>
 
