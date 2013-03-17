@@ -13,6 +13,14 @@
 	<control target="Camera"/> 
 		
 	<objectList>
+    <object name="Scene">
+      <graphics>
+        <scene>
+          <skyBox path="SkyBoxes/SunSet" format="png"/>
+        </scene>
+      </graphics>
+    </object>
+    
     <object name="Camera" class="UserControl">
       <graphics>
 				<camera view="PROJ" fov="45"/>
@@ -27,7 +35,7 @@
 
     <object name="Floor">
 			<graphics>
-				<instance mesh="floor_large.3DS" material="Cross"/>
+				<instance mesh="floor_large.3DS" material="StoneFloor"/>
 				
 				<orientation x="0" y="0" z="-12" roll="0" heading="0" pitch="0"/>
 			</graphics>
