@@ -25,11 +25,11 @@
       <graphics>
 				<camera view="PROJ" fov="45"/>
 
-				<orientation x="0" y="-100" z="20" roll="0" heading="0" pitch="90"/>
+				<orientation x="0" y="15" z="150" roll="0" heading="0" pitch="0"/>
 			</graphics>
 
       <audio>
-        <listener x="0" y="-100" z="20"/>
+        <listener x="0" y="15" z="50"/>
       </audio>      
 		</object>
 
@@ -37,11 +37,11 @@
 			<graphics>
 				<instance mesh="floor_large.3DS" material="StoneFloor"/>
 				
-				<orientation x="0" y="0" z="-12" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
 			</graphics>
 
       <physics>
-        <type id="PLANE" dx="0" dy="0" dz="1" d="0" static="true"/>
+        <type id="PLANE" dx="0" dy="1" dz="0" d="0" static="true"/>
       </physics>
 		</object>
 		
@@ -49,9 +49,9 @@
 			<graphics>
 				<instance mesh="teapot.3DS" material="BluePlastic"/>
 				
-				<orientation x="0" y="0" z="-10" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="180"/>
 
-        <animation roll="40" heading="0" pitch="0"/>
+        <animation roll="0" heading="40" pitch="0"/>
 			</graphics>
 		</object>
 		
@@ -59,15 +59,15 @@
 			<graphics>
 				<instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
 				
-				<orientation x="-30" y="13" z="70" roll="0" heading="0" pitch="0"/>
+				<orientation x="-30" y="70" z="13" roll="0" heading="0" pitch="0"/>
 			</graphics>
 
       <physics>
-        <type id="SPHERE" px="-30" py="13" pz="70" mass="1" r="1"/>
+        <type id="SPHERE" px="-30" py="70" pz="13" mass="1" r="10"/>
       </physics>
 
       <audio>
-        <sound x="-30" y="13" z="70" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+        <sound x="-30" y="70" z="13" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
       </audio>
 		</object>
 
@@ -75,15 +75,47 @@
       <graphics>
         <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
 
-        <orientation x="-50" y="53" z="30" roll="0" heading="0" pitch="0"/>
+        <orientation x="-50" y="30" z="53" roll="0" heading="0" pitch="0"/>
       </graphics>
 
       <physics>
-        <type id="SPHERE" px="-50" py="53" pz="30" mass="1" r="1"/>
+        <type id="SPHERE" px="-50" py="30" pz="53" mass="1" r="10"/>
       </physics>
 
       <audio>
-        <sound x="-50" y="53" z="30" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+        <sound x="-50" y="30" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+      </audio>
+    </object>
+
+    <object name="GeoSphere3" class="BouncySphere">
+      <graphics>
+        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
+
+        <orientation x="-40" y="90" z="53" roll="0" heading="0" pitch="0"/>
+      </graphics>
+
+      <physics>
+        <type id="SPHERE" px="-40" py="90" pz="53" mass="1" r="10"/>
+      </physics>
+
+      <audio>
+        <sound x="-40" y="90" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+      </audio>
+    </object>
+
+    <object name="GeoSphere4" class="BouncySphere">
+      <graphics>
+        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
+
+        <orientation x="-40" y="10" z="53" roll="0" heading="0" pitch="0"/>
+      </graphics>
+
+      <physics>
+        <type id="SPHERE" px="-40" py="10" pz="53" mass="1" r="10" static="false"/>
+      </physics>
+
+      <audio>
+        <sound x="-40" y="90" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
       </audio>
     </object>
     
@@ -91,13 +123,13 @@
 			<graphics>
 				<instance mesh="knot.3DS" material="GreenPlastic"/>
 				
-				<orientation x="50" y="15" z="50" roll="0" heading="0" pitch="0"/>
+				<orientation x="50" y="50" z="15" roll="0" heading="0" pitch="0"/>
 
         <animation roll="-110" heading="110" pitch="110"/>
 			</graphics>
 
       <audio>
-        <sound x="50" y="15" z="50" minDist="1.0" maxDist="500.0" loop="true" file="rotation.wav"/>
+        <sound x="50" y="50" z="15" minDist="1.0" maxDist="500.0" loop="true" file="rotation.wav"/>
       </audio>
 		</object>
     
@@ -105,7 +137,7 @@
 			<graphics>
 				<light type="SPOT"/>
 
-				<orientation x="0" y="0" z="20" roll="0" heading="0" pitch="-30"/>
+				<orientation x="0" y="25" z="150" roll="0" heading="0" pitch="0"/>
 				
 				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/>
 			</graphics>
