@@ -25,7 +25,7 @@
       <graphics>
 				<camera view="PROJ" fov="45"/>
 
-				<orientation x="0" y="15" z="150" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
 			</graphics>
 
       <audio>
