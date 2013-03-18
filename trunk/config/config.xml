@@ -29,8 +29,12 @@
 			</graphics>
 
       <audio>
-        <listener x="0" y="15" z="50"/>
-      </audio>      
+        <listener x="0" y="15" z="150"/>
+      </audio>
+
+      <physics>
+        <type id="SPHERE" px="0" py="15" pz="150" mass="1" r="5" static="true"/>
+      </physics>
 		</object>
 
     <object name="Floor">
@@ -41,8 +45,8 @@
 			</graphics>
 
       <physics>
-        <type id="PLANE" dx="0" dy="1" dz="0" d="0" static="true"/>
-      </physics>
+        <type id="BOX" px="0" py="-1" pz="0" sx="200" sy="1" sz="200" static="true"/>
+      </physics> 
 		</object>
 		
 		<object name="Teapot">
@@ -53,6 +57,10 @@
 
         <animation roll="0" heading="40" pitch="0"/>
 			</graphics>
+
+      <physics>
+        <type id="SPHERE" px="0" py="0" pz="0" mass="1" r="10" static="true"/>
+      </physics>
 		</object>
 		
 		<object name="GeoSphere1" class="BouncySphere">
@@ -115,7 +123,23 @@
       </physics>
 
       <audio>
-        <sound x="-40" y="90" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+        <sound x="-40" y="10" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
+      </audio>
+    </object>
+
+    <object name="GeoSphere5" class="BouncySphere">
+      <graphics>
+        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
+
+        <orientation x="-10" y="30" z="0" roll="0" heading="0" pitch="0"/>
+      </graphics>
+
+      <physics>
+        <type id="SPHERE" px="-10" py="30" pz="0" mass="1" r="10" static="false"/>
+      </physics>
+
+      <audio>
+        <sound x="-10" y="30" z="0" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
       </audio>
     </object>
     
