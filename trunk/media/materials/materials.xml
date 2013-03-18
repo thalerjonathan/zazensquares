@@ -39,7 +39,7 @@
 
 	<material name="StoneFloor">
     <type id="DIFFUSE">
-      <color r="1.0" g="0.0" b="0.0"/>
+      <color r="0.0" g="0.0" b="0.0"/>
 			<diffuseColor file="brick.jpg"/>
 		</type>
 	</material>
