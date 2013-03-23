@@ -25,7 +25,7 @@
       <graphics>
 				<camera view="PROJ" fov="45"/>
 
-				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="35" z="50" roll="0" heading="0" pitch="0"/>
 			</graphics>
 
       <audio>
@@ -33,7 +33,7 @@
       </audio>
 
       <physics>
-        <type id="SPHERE" px="0" py="15" pz="150" mass="1" r="5" static="true"/>
+        <type id="SPHERE" px="0" py="15" pz="50" mass="1" r="5" static="true"/>
       </physics>
 		</object>
 
@@ -45,7 +45,7 @@
 			</graphics>
 
       <physics>
-        <type id="BOX" px="0" py="-1" pz="0" sx="200" sy="1" sz="200" static="true"/>
+        <type id="BOX" px="0" py="-1" pz="0" sx="200" sy="1" sz="200" mass="10" static="true"/>
       </physics> 
 		</object>
 		
@@ -59,7 +59,7 @@
 			</graphics>
 
       <physics>
-        <type id="SPHERE" px="0" py="0" pz="0" mass="1" r="10" static="true"/>
+        <type id="SPHERE" px="0" py="0" pz="0" mass="10" r="15" static="true"/>
       </physics>
 		</object>
 		
@@ -71,7 +71,7 @@
 			</graphics>
 
       <physics>
-        <type id="SPHERE" px="-30" py="70" pz="13" mass="1" r="10"/>
+        <type id="SPHERE" px="-30" py="70" pz="13" mass="10" r="10"/>
       </physics>
 
       <audio>
@@ -87,7 +87,7 @@
       </graphics>
 
       <physics>
-        <type id="SPHERE" px="-50" py="30" pz="53" mass="1" r="10"/>
+        <type id="SPHERE" px="-50" py="30" pz="53" mass="10" r="10"/>
       </physics>
 
       <audio>
@@ -103,7 +103,7 @@
       </graphics>
 
       <physics>
-        <type id="SPHERE" px="-40" py="90" pz="53" mass="1" r="10"/>
+        <type id="SPHERE" px="-40" py="90" pz="53" mass="10" r="10"/>
       </physics>
 
       <audio>
@@ -119,7 +119,7 @@
       </graphics>
 
       <physics>
-        <type id="SPHERE" px="-40" py="10" pz="53" mass="1" r="10" static="false"/>
+        <type id="SPHERE" px="-40" py="10" pz="53" mass="10" r="10" static="false"/>
       </physics>
 
       <audio>
@@ -135,7 +135,7 @@
       </graphics>
 
       <physics>
-        <type id="SPHERE" px="-10" py="30" pz="0" mass="1" r="10" static="false"/>
+        <type id="SPHERE" px="-10" py="30" pz="0" mass="10" r="10" static="false"/>
       </physics>
 
       <audio>
