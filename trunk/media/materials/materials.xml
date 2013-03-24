@@ -62,6 +62,12 @@
 		</type>
 	</material>
 
+  <material name="WoodPlanks">
+    <type id="DIFFUSE">
+      <diffuseColor file="wooden_plank_fence.jpg"/>
+    </type>
+  </material>
+
   <!-- EXAMPLES
 	<material name="ChurchGlass">
 		<type id="TRANSPARENT">
