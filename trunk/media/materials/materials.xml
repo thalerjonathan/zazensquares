@@ -1,105 +1,27 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <materials>
-  <material name="Jade">
+  <material name="JadePhong">
     <type id="PHONG">
       <color r="0.54" g="0.89" b="0.63"/>
     </type>
   </material>
 
-  <material name="Obsidian">
+  <material name="ObsidianPhong">
     <type id="PHONG">
       <color r="0.18275" g="0.17" b="0.22525"/>
     </type>
   </material>
-  
-  <material name="PhongYellowPlastic">
-		<type id="PHONG">
-			<color r="1.0" g="0.0" b="0.0"/>
-		</type>
-	</material>
 
-  <material name="DiffuseYellowPlastic">
-    <type id="DIFFUSE">
-      <color r="1.0" g="1.0" b="0.0"/>
+  <material name="WhiteLambert">
+    <type id="LAMBERTIAN">
+      <color r="1.0" g="1.0" b="1.0"/>
     </type>
   </material>
-  
-	<material name="GreenPlastic">
-		<type id="PHONG">
-			<color r="0.0" g="1.0" b="0.0"/>
-		</type>
-	</material>
-	
-	<material name="BluePlastic">
-		<type id="PHONG">
-			<color r="0.0" g="0.0" b="1.0"/>
-		</type>
-	</material>
-	
-	<material name="WhitePlastic">
-		<type id="PHONG">
-			<color r="1.0" g="1.0" b="1.0"/>
-		</type>
-	</material>
-
-  <material name="OrangePlastic">
-    <type id="PHONG">
-      <color r="1.0" g="0.5" b="0.0"/>
-    </type>
-  </material>
-	
-	<material name="Cross">
-		<type id="DIFFUSE">
-			<diffuseColor file="cross_diffuse.jpg"/>
-		</type>
-	</material>
-
-	<material name="StoneFloor">
-    <type id="DIFFUSE">
-      <color r="0.0" g="0.0" b="0.0"/>
-			<diffuseColor file="brick.jpg"/>
-		</type>
-	</material>
 
   <material name="WoodPlanks">
     <type id="DIFFUSE">
       <diffuseColor file="wooden_plank_fence.jpg"/>
     </type>
   </material>
-
-  <!-- EXAMPLES
-	<material name="ChurchGlass">
-		<type id="TRANSPARENT">
-			<diffuseColor1 file="media/graphics/textures/churchWindowColor.tga"/>
-			<normalMap file="media/graphics/textures/churchWindowNormals.tga"/>
-		</type>
-	</material>
-
-	<material name="BluePlastic">
-		<type id="PHONG">
-			<color r="0.0" g="0.0" b="1.0"/>
-		</type>
-	</material>
-
-	<material name="MatePaper">
-		<type id="ORENNAYAR">
-		</type>
-	</material>
-
-	<material name="Jade">
-		<type id="SSS">
-		</type>
-	</material>
-
-	<material name="BrushedMetal">
-		<type id="WARDS">
-		</type>
-	</material>
-
-	<material name="SnowMetal">
-		<type id="TORRANCESPARROW">
-		</type>
-	</material>
-	-->
 </materials>

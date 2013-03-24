@@ -39,25 +39,31 @@
 
     <object name="Bunny">
       <graphics>
-        <instance mesh="bunny.obj" material="WhitePlastic"/>
+        <instance mesh="bunny.obj" material="WhiteLambert"/>
 
         <orientation x="-50" y="0" z="0" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="0" heading="10" pitch="0"/>
       </graphics>
     </object>
     
 		<object name="Teapot">
 			<graphics>
-				<instance mesh="teapot.3DS" material="Obsidian"/>
+				<instance mesh="teapot.3DS" material="ObsidianPhong"/>
 				
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="180"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
 			</graphics>
 		</object>
     
     <object name="Dragon">
       <graphics>
-        <instance mesh="dragon.obj" material="Jade"/>
+        <instance mesh="dragon.obj" material="JadePhong"/>
 
         <orientation x="50" y="0" z="0" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="0" heading="20" pitch="0"/>
       </graphics>
     </object>
 
