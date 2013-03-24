@@ -49,6 +49,9 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Light">
       <UniqueIdentifier>{b29fed0b-01a2-42c4-9d8d-f9a57b684923}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow">
+      <UniqueIdentifier>{c5beded9-b72a-40af-8336-30c0b93e12d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -87,6 +90,12 @@
     </None>
     <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\shadowFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\shadowVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow</Filter>
     </None>
   </ItemGroup>
 </Project>

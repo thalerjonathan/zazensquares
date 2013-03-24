@@ -37,6 +37,7 @@
 			</graphics>
 		</object>
 
+    <!--
     <object name="Bunny">
       <graphics>
         <instance mesh="bunny.obj" material="WhiteLambert"/>
@@ -66,10 +67,10 @@
         <animation roll="0" heading="20" pitch="0"/>
       </graphics>
     </object>
-
+-->
 		<object name="SpotLight">
 			<graphics>
-				<light type="SPOT"/>
+				<light type="DIRECTIONAL"/>
 
 				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
 				
