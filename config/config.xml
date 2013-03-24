@@ -31,7 +31,7 @@
 
     <object name="Floor">
 			<graphics>
-				<instance mesh="floor_large.3DS" material="StoneFloor"/>
+				<instance mesh="floor_large.3DS" material="WoodPlanks"/>
 				
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
 			</graphics>
@@ -42,36 +42,30 @@
         <instance mesh="bunny.obj" material="WhitePlastic"/>
 
         <orientation x="-50" y="0" z="0" roll="0" heading="0" pitch="0"/>
-
-        <animation roll="0" heading="10" pitch="0"/>
       </graphics>
     </object>
-
+    
 		<object name="Teapot">
 			<graphics>
 				<instance mesh="teapot.3DS" material="Obsidian"/>
 				
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="180"/>
-
-        <animation roll="0" heading="20" pitch="0"/>
 			</graphics>
 		</object>
-
+    
     <object name="Dragon">
       <graphics>
         <instance mesh="dragon.obj" material="Jade"/>
 
         <orientation x="50" y="0" z="0" roll="0" heading="0" pitch="0"/>
-
-        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
-    
+
 		<object name="SpotLight">
 			<graphics>
 				<light type="SPOT"/>
 
-				<orientation x="0" y="25" z="150" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
 				
 				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/>
 			</graphics>
