@@ -25,168 +25,49 @@
       <graphics>
 				<camera view="PROJ" fov="45"/>
 
-				<orientation x="0" y="35" z="50" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
 			</graphics>
-
-      <audio>
-        <listener x="0" y="15" z="150"/>
-      </audio>
-
-      <physics>
-        <type id="SPHERE" px="0" py="15" pz="50" mass="1" r="5" static="true"/>
-      </physics>
 		</object>
 
-    <object name="Floor">
-      <graphics>
-        <instance mesh="chessgame.obj" material="StoneFloor"/>
-
-        <orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
-      </graphics>
-
-      <physics>
-        <type id="BOX" px="0" py="-1" pz="0" sx="200" sy="1" sz="200" mass="10" static="true"/>
-      </physics>
-    </object>
-
-    <!--
     <object name="Floor">
 			<graphics>
 				<instance mesh="floor_large.3DS" material="StoneFloor"/>
 				
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
 			</graphics>
-
-      <physics>
-        <type id="BOX" px="0" py="-1" pz="0" sx="200" sy="1" sz="200" mass="10" static="true"/>
-      </physics> 
 		</object>
 
     <object name="Bunny">
       <graphics>
-        <instance mesh="bunny.obj" material="OrangePlastic"/>
+        <instance mesh="bunny.obj" material="WhitePlastic"/>
 
-        <orientation x="0" y="0" z="-50" roll="0" heading="0" pitch="0"/>
+        <orientation x="-50" y="0" z="0" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="0" heading="10" pitch="0"/>
       </graphics>
     </object>
 
-    <object name="Dragon">
-      <graphics>
-        <instance mesh="dragon.obj" material="WhitePlastic"/>
-
-        <orientation x="50" y="0" z="-50" roll="0" heading="0" pitch="0"/>
-      </graphics>
-    </object>
-    
 		<object name="Teapot">
 			<graphics>
-				<instance mesh="teapot.3DS" material="BluePlastic"/>
+				<instance mesh="teapot.3DS" material="Obsidian"/>
 				
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="180"/>
 
-        <animation roll="0" heading="40" pitch="0"/>
+        <animation roll="0" heading="20" pitch="0"/>
 			</graphics>
-
-      <physics>
-        <type id="SPHERE" px="0" py="0" pz="0" mass="10" r="15" static="true"/>
-      </physics>
-		</object>
-		
-		<object name="GeoSphere1" class="BouncySphere">
-			<graphics>
-				<instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
-				
-				<orientation x="-30" y="70" z="13" roll="0" heading="0" pitch="0"/>
-			</graphics>
-
-      <physics>
-        <type id="SPHERE" px="-30" py="70" pz="13" mass="10" r="10"/>
-      </physics>
-
-      <audio>
-        <sound x="-30" y="70" z="13" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
-      </audio>
 		</object>
 
-    <object name="GeoSphere2" class="BouncySphere">
+    <object name="Dragon">
       <graphics>
-        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
+        <instance mesh="dragon.obj" material="Jade"/>
 
-        <orientation x="-50" y="30" z="53" roll="0" heading="0" pitch="0"/>
+        <orientation x="50" y="0" z="0" roll="0" heading="0" pitch="0"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
-
-      <physics>
-        <type id="SPHERE" px="-50" py="30" pz="53" mass="10" r="10"/>
-      </physics>
-
-      <audio>
-        <sound x="-50" y="30" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
-      </audio>
-    </object>
-
-    <object name="GeoSphere3" class="BouncySphere">
-      <graphics>
-        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
-
-        <orientation x="-40" y="90" z="53" roll="0" heading="0" pitch="0"/>
-      </graphics>
-
-      <physics>
-        <type id="SPHERE" px="-40" py="90" pz="53" mass="10" r="10"/>
-      </physics>
-
-      <audio>
-        <sound x="-40" y="90" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
-      </audio>
-    </object>
-
-    <object name="GeoSphere4" class="BouncySphere">
-      <graphics>
-        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
-
-        <orientation x="-40" y="10" z="53" roll="0" heading="0" pitch="0"/>
-      </graphics>
-
-      <physics>
-        <type id="SPHERE" px="-40" py="10" pz="53" mass="10" r="10" static="false"/>
-      </physics>
-
-      <audio>
-        <sound x="-40" y="10" z="53" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
-      </audio>
-    </object>
-
-    <object name="GeoSphere5" class="BouncySphere">
-      <graphics>
-        <instance mesh="geoSphere.3DS" material="PhongYellowPlastic"/>
-
-        <orientation x="-10" y="30" z="0" roll="0" heading="0" pitch="0"/>
-      </graphics>
-
-      <physics>
-        <type id="SPHERE" px="-10" py="30" pz="0" mass="10" r="10" static="false"/>
-      </physics>
-
-      <audio>
-        <sound x="-10" y="30" z="0" minDist="1.0" maxDist="500.0" loop="false" immediatePlayback="false" file="bounce.wav"/>
-      </audio>
     </object>
     
-		<object name="Knot">
-			<graphics>
-				<instance mesh="knot.3DS" material="GreenPlastic"/>
-				
-				<orientation x="50" y="50" z="15" roll="0" heading="0" pitch="0"/>
-
-        <animation roll="-110" heading="110" pitch="110"/>
-			</graphics>
-
-      <audio>
-        <sound x="50" y="50" z="15" minDist="1.0" maxDist="500.0" loop="true" file="rotation.wav"/>
-      </audio>
-		</object>
-  -->
-		<object name="Light1Spot">
+		<object name="SpotLight">
 			<graphics>
 				<light type="SPOT"/>
 
@@ -195,26 +76,5 @@
 				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/>
 			</graphics>
 		</object>
-		
-		<!--
-		<object name="Light2Directional">
-			<graphics>
-				<light type="DIRECTIONAL"/>
-				
-				<orientation x="0" y="-3" z="0" roll="0" heading="0" pitch="0"/>
-				
-				<shadowing cast="true" resMapX="2048" resMapY="2048"/> 
-			</graphics>
-		</object>
-		<object name="Light3Point">
-			<graphics>
-				<light type="POINT"/>
-				
-				<orientation x="0" y="-3" z="0" roll="0" heading="0" pitch="0"/>
-				
-				<shadowing cast="true" resMapX="400" resMapY="400"/> 
-			</graphics>
-		</object>
-		-->
 	</objectList>
 </config>
