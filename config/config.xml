@@ -39,7 +39,7 @@
 
     <object name="Floor">
       <graphics>
-        <instance mesh="chessgame1.obj" material="StoneFloor"/>
+        <instance mesh="chessgame.obj" material="StoneFloor"/>
 
         <orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
       </graphics>
@@ -48,7 +48,7 @@
         <type id="BOX" px="0" py="-1" pz="0" sx="200" sy="1" sz="200" mass="10" static="true"/>
       </physics>
     </object>
-    
+
     <!--
     <object name="Floor">
 			<graphics>
@@ -185,7 +185,7 @@
         <sound x="50" y="50" z="15" minDist="1.0" maxDist="500.0" loop="true" file="rotation.wav"/>
       </audio>
 		</object>
-    -->
+  -->
 		<object name="Light1Spot">
 			<graphics>
 				<light type="SPOT"/>
