@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <materials>
-	<material name="PhongYellowPlastic">
+  <material name="Jade">
+    <type id="PHONG">
+      <color r="0.54" g="0.89" b="0.63"/>
+    </type>
+  </material>
+
+  <material name="Obsidian">
+    <type id="PHONG">
+      <color r="0.18275" g="0.17" b="0.22525"/>
+    </type>
+  </material>
+  
+  <material name="PhongYellowPlastic">
 		<type id="PHONG">
 			<color r="1.0" g="0.0" b="0.0"/>
 		</type>
