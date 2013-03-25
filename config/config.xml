@@ -23,9 +23,9 @@
     
     <object name="Camera" class="UserControl">
       <graphics>
-				<camera view="PROJ" fov="45"/>
+				<camera view="PROJ" fov="90"/>
 
-				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="65" z="70" roll="0" heading="0" pitch="-30"/>
 			</graphics>
 		</object>
 
@@ -36,7 +36,6 @@
 				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
 			</graphics>
 		</object>
-
     <!--
     <object name="Bunny">
       <graphics>
@@ -47,7 +46,7 @@
         <animation roll="0" heading="10" pitch="0"/>
       </graphics>
     </object>
-    
+    -->
 		<object name="Teapot">
 			<graphics>
 				<instance mesh="teapot.3DS" material="ObsidianPhong"/>
@@ -57,7 +56,7 @@
         <animation roll="0" heading="30" pitch="0"/>
 			</graphics>
 		</object>
-    
+    <!--
     <object name="Dragon">
       <graphics>
         <instance mesh="dragon.obj" material="JadePhong"/>
@@ -67,12 +66,12 @@
         <animation roll="0" heading="20" pitch="0"/>
       </graphics>
     </object>
--->
+  -->
 		<object name="SpotLight">
 			<graphics>
-				<light type="DIRECTIONAL"/>
+				<light type="SPOT"/>
 
-				<orientation x="0" y="35" z="150" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="65" z="70" roll="0" heading="0" pitch="-30"/>
 				
 				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/>
 			</graphics>
