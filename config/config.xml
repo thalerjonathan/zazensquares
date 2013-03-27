@@ -25,7 +25,7 @@
       <graphics>
 				<camera view="PROJ" fov="90"/>
 
-				<orientation x="0" y="65" z="70" roll="0" heading="0" pitch="-30"/>
+				<orientation x="0" y="25" z="70" roll="0" heading="0" pitch="-10"/>
 			</graphics>
 		</object>
 
@@ -47,7 +47,7 @@
       </graphics>
     </object>
     -->
-		<object name="Teapot">
+		<object name="Teapot1">
 			<graphics>
 				<instance mesh="teapot.3DS" material="ObsidianPhong"/>
 				
@@ -71,7 +71,7 @@
 			<graphics>
 				<light type="SPOT"/>
 
-        <orientation x="0" y="65" z="70" roll="0" heading="0" pitch="-30"/>
+        <orientation x="0" y="25" z="70" roll="0" heading="0" pitch="-10"/>
 				
 				<shadowing cast="true" angle="90" resMapX="800" resMapY="800"/>
 			</graphics>
