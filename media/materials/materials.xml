@@ -20,7 +20,7 @@
   </material>
 
   <material name="WoodPlanks">
-    <type id="DIFFUSE">
+    <type id="LAMBERTIAN">
       <diffuseColor file="wooden_plank_fence.jpg"/>
     </type>
   </material>
