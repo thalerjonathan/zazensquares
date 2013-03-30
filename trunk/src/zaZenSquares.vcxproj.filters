@@ -97,5 +97,8 @@
     <None Include="..\pipeline\dr\stages\shadowing\shadowVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow</Filter>
     </None>
+    <None Include="..\pipeline\dr\stages\lighting\lightNoShadowFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
+    </None>
   </ItemGroup>
 </Project>
