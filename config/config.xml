@@ -45,15 +45,16 @@
         <animation roll="0" heading="30" pitch="0"/>
 			</graphics>
     </object>
+
     <object name="SpotLight">
-			<graphics>
-				<light type="SPOT"/>
+      <graphics>
+        <light type="SPOT"/>
 
         <orientation x="0" y="25" z="70" roll="0" heading="0" pitch="-10"/>
-				
-				<shadowing fov="90" resMapX="2048" resMapY="2048"/>
-			</graphics>
-		</object>
+
+        <shadowing fov="90" resMapX="2048" resMapY="2048"/>
+      </graphics>
+    </object>
 <!--
     <object name="Bunny">
       <graphics>
