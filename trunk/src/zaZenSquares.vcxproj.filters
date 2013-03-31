@@ -52,6 +52,9 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow">
       <UniqueIdentifier>{c5beded9-b72a-40af-8336-30c0b93e12d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\SkyBox">
+      <UniqueIdentifier>{b6bf864c-d2ce-4fb4-9ba0-945466104425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -99,6 +102,9 @@
     </None>
     <None Include="..\pipeline\dr\stages\lighting\lightNoShadowFrag.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\geom\skyBoxFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\SkyBox</Filter>
     </None>
   </ItemGroup>
 </Project>
