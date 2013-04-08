@@ -16,7 +16,7 @@
     <object name="Scene">
       <graphics>
         <scene>
-          <skyBox path="SkyBoxes/SunSet" format="png"/>
+          <skyBox path="SkyBoxes/Heaven" format="png"/>
         </scene>
       </graphics>
     </object>
@@ -55,7 +55,8 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-<!--
+
+    <!--
     <object name="Bunny">
       <graphics>
         <instance mesh="bunny.obj" material="WhiteLambert"/>
