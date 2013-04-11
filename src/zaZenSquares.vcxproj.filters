@@ -109,5 +109,8 @@
     <None Include="..\pipeline\dr\stages\geom\skyBoxVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\SkyBox</Filter>
     </None>
+    <None Include="..\config\log4cplus.properties">
+      <Filter>Ressourcendateien\Config</Filter>
+    </None>
   </ItemGroup>
 </Project>

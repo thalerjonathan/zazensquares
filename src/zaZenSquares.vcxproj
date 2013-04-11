@@ -105,6 +105,7 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\config\config.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="..\config\log4cplus.properties" />
     <None Include="..\media\materials\materials.xml">
       <SubType>Designer</SubType>
     </None>
