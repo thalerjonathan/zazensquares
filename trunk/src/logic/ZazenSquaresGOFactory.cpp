@@ -7,6 +7,8 @@
 
 #include "ZazenSquaresGOFactory.h"
 
+#include "Core.h"
+
 #include "objectclasses/GOUserControl.h"
 
 #include <iostream>
@@ -36,7 +38,7 @@ ZazenSquaresGOFactory::createObject( const std::string& objectClass )
 	}
 	else
 	{
-		cout << "WARNING ... in ZazenSquaresGOFactory::createObject: unknown object-class '" << objectClass << "'" << endl;
+		Core::getRef().getCoreLogger().logError() << "in ZazenSquaresGOFactory::createObject: unknown object-class '" << objectClass << "'";
 	}
 
 	return gameObjectInstance;
