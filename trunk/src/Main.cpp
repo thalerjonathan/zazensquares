@@ -9,7 +9,9 @@
 
 #include "logic/ZazenSquaresGOFactory.h"
 
-int main( int argc, char** args )
+#include <windows.h>
+
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR sCmdLine, int iShow )
 {
 	int ret = 0;
 	IGameObjectFactory* objectFactory = new ZazenSquaresGOFactory();

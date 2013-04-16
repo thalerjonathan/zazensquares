@@ -38,9 +38,9 @@
 		</object>
 		<object name="Teapot">
 			<graphics>
-				<instance mesh="teapot.3DS" material="ObsidianPhong"/>
+				<instance mesh="teapot.3ds" material="ObsidianPhong"/>
 				
-				<orientation x="0" y="0" z="30" roll="0" heading="0" pitch="180"/>
+				<orientation x="0" y="0" z="10" roll="0" heading="0" pitch="180"/>
 
         <animation roll="0" heading="30" pitch="0"/>
 			</graphics>
@@ -55,8 +55,7 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-
-    <!--
+<!--
     <object name="Bunny">
       <graphics>
         <instance mesh="bunny.obj" material="WhiteLambert"/>
