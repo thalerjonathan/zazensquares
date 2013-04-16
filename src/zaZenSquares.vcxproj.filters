@@ -112,5 +112,11 @@
     <None Include="..\config\log4cplus.properties">
       <Filter>Ressourcendateien\Config</Filter>
     </None>
+    <None Include="..\pipeline\programConfig.xml">
+      <Filter>Ressourcendateien\Pipeline</Filter>
+    </None>
+    <None Include="..\pipeline\uniformBlockConfig.xml">
+      <Filter>Ressourcendateien\Pipeline</Filter>
+    </None>
   </ItemGroup>
 </Project>
