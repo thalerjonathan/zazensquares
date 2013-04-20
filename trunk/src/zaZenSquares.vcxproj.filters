@@ -115,8 +115,5 @@
     <None Include="..\pipeline\programConfig.xml">
       <Filter>Ressourcendateien\Pipeline</Filter>
     </None>
-    <None Include="..\pipeline\uniformBlockConfig.xml">
-      <Filter>Ressourcendateien\Pipeline</Filter>
-    </None>
   </ItemGroup>
 </Project>
