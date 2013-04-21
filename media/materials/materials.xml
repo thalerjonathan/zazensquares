@@ -24,4 +24,11 @@
       <diffuseColor file="wooden_plank_fence.jpg"/>
     </type>
   </material>
+
+  <material name="TransparentCross">
+    <type id="TRANSPARENT">
+      <diffuseColor file="cross_diffuse.jpg"/>
+      <normalMap file="cross_normal.jpg"/>
+    </type>
+  </material>
 </materials>

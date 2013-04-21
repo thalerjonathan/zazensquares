@@ -29,23 +29,6 @@
 			</graphics>
 		</object>
 
-    <object name="Floor">
-			<graphics>
-				<instance mesh="floor_large.3DS" material="WoodPlanks"/>
-				
-				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
-			</graphics>
-		</object>
-		<object name="Teapot">
-			<graphics>
-				<instance mesh="teapot.3ds" material="ObsidianPhong"/>
-				
-				<orientation x="0" y="0" z="10" roll="0" heading="0" pitch="180"/>
-
-        <animation roll="0" heading="30" pitch="0"/>
-			</graphics>
-    </object>
-
     <object name="SpotLight">
       <graphics>
         <light type="SPOT"/>
@@ -55,7 +38,26 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-<!--
+    
+    <object name="Floor">
+			<graphics>
+				<instance mesh="floor_large.3DS" material="WoodPlanks"/>
+				
+				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
+			</graphics>
+		</object>
+
+
+		<object name="Teapot">
+			<graphics>
+				<instance mesh="teapot.3ds" material="ObsidianPhong"/>
+				
+				<orientation x="0" y="0" z="10" roll="0" heading="0" pitch="180"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
+			</graphics>
+    </object>
+    <!--
     <object name="Bunny">
       <graphics>
         <instance mesh="bunny.obj" material="WhiteLambert"/>
@@ -65,6 +67,7 @@
         <animation roll="0" heading="10" pitch="0"/>
       </graphics>
     </object>
+    
     <object name="Dragon">
       <graphics>
         <instance mesh="dragon.obj" material="JadePhong"/>
