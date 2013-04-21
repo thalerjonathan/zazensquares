@@ -118,6 +118,8 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl" />
     <None Include="..\pipeline\dr\stages\shadowing\shadowFrag.glsl" />
     <None Include="..\pipeline\dr\stages\shadowing\shadowVert.glsl" />
+    <None Include="..\pipeline\dr\stages\transparency\transpFrag.glsl" />
+    <None Include="..\pipeline\dr\stages\transparency\transpVert.glsl" />
     <None Include="..\pipeline\programConfig.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
