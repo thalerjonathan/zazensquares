@@ -124,5 +124,11 @@
     <None Include="..\pipeline\dr\stages\transparency\transpVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Transparency</Filter>
     </None>
+    <None Include="..\pipeline\dr\stages\transparency\blendTranspFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Transparency</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\transparency\blendTranspVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Transparency</Filter>
+    </None>
   </ItemGroup>
 </Project>
