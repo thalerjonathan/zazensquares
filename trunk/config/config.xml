@@ -38,7 +38,23 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
+    <object name="Floor">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
+      </graphics>
+    </object>
+
+    <object name="Sphere">
+      <graphics>
+        <instance mesh="geosphere.3DS" material="TransparentCross"/>
+
+        <orientation x="0" y="20" z="20" roll="0" heading="0" pitch="0"/>
+      </graphics>
+    </object>
     
+    <!--
     <object name="Floor">
 			<graphics>
 				<instance mesh="floor_large.3DS" material="TransparentCross"/>
@@ -47,17 +63,16 @@
 			</graphics>
 		</object>
 
-
-		<object name="Teapot">
+    <object name="Teapot">
 			<graphics>
-				<instance mesh="teapot.3ds" material="ObsidianPhong"/>
+				<instance mesh="teapot.3ds" material="JadePhong"/>
 				
 				<orientation x="0" y="0" z="10" roll="0" heading="0" pitch="180"/>
 
         <animation roll="0" heading="30" pitch="0"/>
 			</graphics>
     </object>
-    <!--
+
     <object name="Bunny">
       <graphics>
         <instance mesh="bunny.obj" material="WhiteLambert"/>
