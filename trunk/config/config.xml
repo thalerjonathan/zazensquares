@@ -25,7 +25,7 @@
       <graphics>
 				<camera view="PROJ" fov="90"/>
 
-				<orientation x="0" y="25" z="70" roll="0" heading="0" pitch="-10"/>
+				<orientation x="0" y="50" z="-250" roll="180" heading="180" pitch="180"/>
 			</graphics>
 		</object>
 
@@ -38,31 +38,34 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-    <object name="Floor">
+    
+    <object name="ChurchWindow">
       <graphics>
-        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+        <instance mesh="floor_large.3DS" material="TransparentGlass"/>
 
-        <orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="100" z="-100" roll="0" heading="0" pitch="90"/>
       </graphics>
     </object>
 
-    <object name="Sphere">
+    <object name="Teapot">
       <graphics>
-        <instance mesh="geosphere.3DS" material="TransparentCross"/>
+        <instance mesh="teapot.3ds" material="JadePhong"/>
 
-        <orientation x="0" y="20" z="20" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="50" z="-180" roll="0" heading="0" pitch="180" scale="2"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
     
-    <!--
     <object name="Floor">
 			<graphics>
-				<instance mesh="floor_large.3DS" material="TransparentCross"/>
+				<instance mesh="floor_large.3DS" material="WoodPlanks"/>
 				
-				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0" />
 			</graphics>
 		</object>
 
+    <!--
     <object name="Teapot">
 			<graphics>
 				<instance mesh="teapot.3ds" material="JadePhong"/>

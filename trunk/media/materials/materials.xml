@@ -31,4 +31,11 @@
       <normalMap file="cross_normal.jpg"/>
     </type>
   </material>
+
+  <material name="TransparentGlass">
+    <type id="TRANSPARENT">
+      <diffuseColor file="glass/diffuse.jpg"/>
+      <normalMap file="glass/normal.jpg"/>
+    </type>
+  </material>
 </materials>
