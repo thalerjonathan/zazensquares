@@ -25,7 +25,7 @@
       <graphics>
 				<camera view="PROJ" fov="90"/>
 
-				<orientation x="0" y="50" z="-250" roll="180" heading="180" pitch="180"/>
+				<orientation x="0" y="50" z="0" roll="0" heading="0" pitch="0"/>
 			</graphics>
 		</object>
 
@@ -39,7 +39,7 @@
       </graphics>
     </object>
     
-    <object name="ChurchWindow">
+    <object name="HouseWindow">
       <graphics>
         <instance mesh="floor_large.3DS" material="TransparentGlass"/>
 
@@ -47,11 +47,19 @@
       </graphics>
     </object>
 
+    <object name="ChurchWindow">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="TransparentCross"/>
+
+        <orientation x="0" y="100" z="100" roll="0" heading="0" pitch="90"/>
+      </graphics>
+    </object>
+
     <object name="Teapot">
       <graphics>
         <instance mesh="teapot.3ds" material="JadePhong"/>
 
-        <orientation x="0" y="50" z="-180" roll="0" heading="0" pitch="180" scale="2"/>
+        <orientation x="0" y="10" z="0" roll="0" heading="0" pitch="180" scale="2"/>
 
         <animation roll="0" heading="30" pitch="0"/>
       </graphics>
