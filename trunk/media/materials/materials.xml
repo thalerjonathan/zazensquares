@@ -29,13 +29,23 @@
     <type id="TRANSPARENT">
       <diffuseColor file="cross_diffuse.jpg"/>
       <normalMap file="cross_normal.jpg"/>
+      <params blendingFactor="0.7" refractionFator="0.3"/>
     </type>
   </material>
-
+  
   <material name="TransparentGlass">
     <type id="TRANSPARENT">
       <diffuseColor file="glass/diffuse.jpg"/>
       <normalMap file="glass/normal.jpg"/>
+      <params blendingFactor="0.5" refractionFator="0.05"/>
+    </type>
+  </material>
+
+  <material name="TransparentGlassRefractOnly">
+    <type id="TRANSPARENT">
+      <diffuseColor file="glass/diffuse.jpg"/>
+      <normalMap file="glass/normal.jpg"/>
+      <params blendingFactor="0" refractionFator="0.05"/>
     </type>
   </material>
 </materials>
