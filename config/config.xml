@@ -38,20 +38,28 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-    
-    <object name="HouseWindow">
+
+    <object name="HouseWindowFront">
       <graphics>
         <instance mesh="floor_large.3DS" material="TransparentGlass"/>
 
-        <orientation x="0" y="100" z="-100" roll="0" heading="0" pitch="90"/>
+        <orientation x="0" y="50" z="-70" roll="0" heading="0" pitch="90" scale="0.5"/>
       </graphics>
     </object>
 
-    <object name="ChurchWindow">
+    <object name="HouseWindowTop">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="TransparentGlassRefractOnly"/>
+
+        <orientation x="0" y="100" z="0" roll="0" heading="0" pitch="0" scale="0.5"/>
+      </graphics>
+    </object>
+
+    <object name="ChurchWindowBack">
       <graphics>
         <instance mesh="floor_large.3DS" material="TransparentCross"/>
 
-        <orientation x="0" y="100" z="100" roll="0" heading="0" pitch="90"/>
+        <orientation x="0" y="50" z="70" roll="0" heading="0" pitch="90" scale="0.5"/>
       </graphics>
     </object>
 
