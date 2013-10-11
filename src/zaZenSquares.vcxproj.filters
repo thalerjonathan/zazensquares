@@ -58,6 +58,9 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Transparency">
       <UniqueIdentifier>{dffac1c5-f147-498d-a279-70f9dc68c7f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Logs">
+      <UniqueIdentifier>{3ab8d4ce-0c08-4b3f-9656-6b5b38772dc2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -130,5 +133,10 @@
     <None Include="..\pipeline\dr\stages\transparency\blendTranspVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Transparency</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\logs\zaZengine.log">
+      <Filter>Ressourcendateien\Logs</Filter>
+    </Text>
   </ItemGroup>
 </Project>
