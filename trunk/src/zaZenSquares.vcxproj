@@ -81,18 +81,30 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ZAZENGINE_PATH)/Impl/core;$(ZAZENGINE_PATH)/IFaces;$(ZAZENGINE_PATH)/libs/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ZAZENGINE_PATH)/src/Impl/core;$(ZAZENGINE_PATH)/src/IFaces;$(ZAZENGINE_PATH)/src/libs/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4275;4251;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(BOOST_PATH)/lib;$(ZAZENGINE_PATH)/Debug;$(ZAZENGINE_PATH)/libs/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>zaZenCore.lib;libboost_thread-vc100-mt-gd-1_51.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_PATH)/lib;$(ZAZENGINE_PATH)/src/Release;$(ZAZENGINE_PATH)/libs/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zaZenCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>copy $(TargetPath) ../bin</Command>
     </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\Release\*.dll $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\Release\*.dll $(SolutionDir)$(Configuration)\
+copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\libs\lib\*.dll $(SolutionDir)$(Configuration)\
+copy $(ZAZENGINE_PATH)\src\Release\*.pdb $(SolutionDir)..\bin\
+copy $(ZAZENGINE_PATH)\src\Release\*.pdb $(SolutionDir)$(Configuration)\
+xcopy $(ZAZENGINE_PATH)\config $(SolutionDir)..\config /S /C /Q /E /Y
+xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="logic\objectclasses\GOUserControl.cpp" />
