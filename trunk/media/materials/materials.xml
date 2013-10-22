@@ -24,6 +24,33 @@
       <diffuseColor file="wooden_plank_fence.jpg"/>
     </type>
   </material>
+
+  <material name="HellknightMaterial">
+    <type id="DOOM3">
+      <diffuseTexture file="doom3/hellknight/hellknight_d.tga"/>
+      <specularTexture file="doom3/hellknight/hellknight_s.tga"/>
+      <heightMap file="doom3/hellknight/hellknight_h.tga"/>
+      <normalMap file="doom3/hellknight/hellknight_local.tga"/>
+    </type>
+  </material>
+
+  <material name="ImpMaterial">
+    <type id="DOOM3">
+      <diffuseTexture file="doom3/imp/imp_d.tga"/>
+      <specularTexture file="doom3/imp/imp_s.tga"/>
+      <heightMap file="doom3/imp/imp_h.tga"/>
+      <normalMap file="doom3/imp/imp_local.tga"/>
+    </type>
+  </material>
+
+  <material name="CyberdemonMaterial">
+    <type id="DOOM3">
+      <diffuseTexture file="doom3/cyberdemon/cyberdemon_d.tga"/>
+      <specularTexture file="doom3/cyberdemon/cyberdemon_s.tga"/>
+      <heightMap file="doom3/cyberdemon/cyberdemon_h.tga"/>
+      <normalMap file="doom3/cyberdemon/cyberdemon_local.tga"/>
+    </type>
+  </material>
   
   <material name="TransparentCross">
     <type id="TRANSPARENT">

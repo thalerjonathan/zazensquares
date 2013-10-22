@@ -38,7 +38,7 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-
+  
     <object name="HouseWindowFront">
       <graphics>
         <instance mesh="floor_large.3DS" material="TransparentGlass"/>
@@ -63,6 +63,37 @@
       </graphics>
     </object>
 
+    <object name="Hellknight">
+      <graphics>
+        <instance mesh="doom3/hellknight/hellknight.md5mesh" material="HellknightMaterial"/>
+
+        <orientation x="0" y="10" z="0" roll="0" heading="0" pitch="180" scale="0.5"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
+      </graphics>
+    </object>
+
+    <object name="Imp">
+      <graphics>
+        <instance mesh="doom3/imp/imp.md5mesh" material="ImpMaterial"/>
+
+        <orientation x="50" y="10" z="0" roll="0" heading="0" pitch="180" scale="1"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
+      </graphics>
+    </object>
+
+    <object name="Cyberdemon">
+      <graphics>
+        <instance mesh="doom3/cyberdemon/cyberdemon.md5mesh" material="CyberdemonMaterial"/>
+
+        <orientation x="-50" y="10" z="0" roll="0" heading="0" pitch="180" scale="0.5"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
+      </graphics>
+    </object>
+
+    <!--
     <object name="Teapot">
       <graphics>
         <instance mesh="teapot.3ds" material="JadePhong"/>
@@ -72,14 +103,14 @@
         <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
-    
+    -->
     <object name="Floor">
-			<graphics>
-				<instance mesh="floor_large.3DS" material="WoodPlanks"/>
-				
-				<orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0" />
-			</graphics>
-		</object>
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="0" y="0" z="0" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
 
     <!--
     <object name="Teapot">
