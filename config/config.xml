@@ -25,7 +25,7 @@
       <graphics>
 				<camera view="PROJ" fov="90"/>
 
-				<orientation x="0" y="50" z="0" roll="0" heading="0" pitch="0"/>
+				<orientation x="0" y="50" z="150" roll="0" heading="0" pitch="0"/>
 			</graphics>
 		</object>
 
@@ -38,7 +38,7 @@
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-  
+    <!--
     <object name="HouseWindowFront">
       <graphics>
         <instance mesh="floor_large.3DS" material="TransparentGlass"/>
@@ -62,14 +62,12 @@
         <orientation x="0" y="50" z="70" roll="0" heading="0" pitch="90" scale="0.5"/>
       </graphics>
     </object>
-
+-->
     <object name="Hellknight">
       <graphics>
         <instance mesh="doom3/hellknight/hellknight.md5mesh" material="HellknightMaterial"/>
 
-        <orientation x="0" y="10" z="0" roll="0" heading="0" pitch="180" scale="0.5"/>
-
-        <animation roll="0" heading="30" pitch="0"/>
+        <orientation x="0" y="0" z="0" roll="90" heading="30" pitch="180" scale="0.5"/>
       </graphics>
     </object>
 
@@ -77,9 +75,7 @@
       <graphics>
         <instance mesh="doom3/imp/imp.md5mesh" material="ImpMaterial"/>
 
-        <orientation x="50" y="10" z="0" roll="0" heading="0" pitch="180" scale="1"/>
-
-        <animation roll="0" heading="30" pitch="0"/>
+        <orientation x="80" y="0" z="0" roll="0" heading="30" pitch="180" scale="1"/>
       </graphics>
     </object>
 
@@ -87,9 +83,7 @@
       <graphics>
         <instance mesh="doom3/cyberdemon/cyberdemon.md5mesh" material="CyberdemonMaterial"/>
 
-        <orientation x="-50" y="10" z="0" roll="0" heading="0" pitch="180" scale="0.5"/>
-
-        <animation roll="0" heading="30" pitch="0"/>
+        <orientation x="-100" y="0" z="0" roll="0" heading="30" pitch="180" scale="0.5"/>
       </graphics>
     </object>
 
@@ -104,7 +98,31 @@
       </graphics>
     </object>
     -->
-    <object name="Floor">
+    <object name="FloorRow1Center">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="0" y="0" z="-200" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow1Left">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="-200" y="0" z="-200" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow1Right">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="200" y="0" z="-200" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow2Center">
       <graphics>
         <instance mesh="floor_large.3DS" material="WoodPlanks"/>
 
@@ -112,6 +130,45 @@
       </graphics>
     </object>
 
+    <object name="FloorRow2Left">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="-200" y="0" z="0" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow2Right">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="200" y="0" z="0" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow3Center">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="0" y="0" z="200" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow3Left">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="-200" y="0" z="200" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
+
+    <object name="FloorRow3Right">
+      <graphics>
+        <instance mesh="floor_large.3DS" material="WoodPlanks"/>
+
+        <orientation x="200" y="0" z="200" roll="0" heading="0" pitch="0" />
+      </graphics>
+    </object>
     <!--
     <object name="Teapot">
 			<graphics>
