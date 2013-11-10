@@ -1,10 +1,3 @@
-/*
- * Main.cpp
- *
- *  Created on: 27.06.2010
- *      Author: joni
- */
-
 #include "Core.h"
 
 #include "logic/ZazenSquaresGOFactory.h"

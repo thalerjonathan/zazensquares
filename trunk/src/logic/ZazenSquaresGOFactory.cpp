@@ -1,10 +1,3 @@
-/*
- * ZazenSquaresGOFactory.cpp
- *
- *  Created on: 12.03.2013
- *      Author: jonathan
- */
-
 #include "ZazenSquaresGOFactory.h"
 
 #include "Core.h"

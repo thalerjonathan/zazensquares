@@ -1,13 +1,13 @@
-#ifndef GOUSERCONTROL_H
-#define GOUSERCONTROL_H
+#ifndef _GOUSERCONTROL_H
+#define _GOUSERCONTROL_H
 
 #include "ZazenGameObject.h"
 
 class GOUserControl : public ZazenGameObject
 {
- public:
-	GOUserControl();
-	virtual ~GOUserControl();
+	public:
+		GOUserControl();
+		virtual ~GOUserControl();
 };
 
-#endif /* GOUSERCONTROL_H */
+#endif /* _GOUSERCONTROL_H */
