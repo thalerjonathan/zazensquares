@@ -123,10 +123,11 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\media\materials\materials.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="..\pipeline\dr\stages\geom\animated\geomAnimVert.glsl" />
     <None Include="..\pipeline\dr\stages\geom\geomFrag.glsl" />
-    <None Include="..\pipeline\dr\stages\geom\geomVert.glsl" />
     <None Include="..\pipeline\dr\stages\geom\skyBoxFrag.glsl" />
     <None Include="..\pipeline\dr\stages\geom\skyBoxVert.glsl" />
+    <None Include="..\pipeline\dr\stages\geom\static\geomStaticVert.glsl" />
     <None Include="..\pipeline\dr\stages\lighting\lightFrag.glsl" />
     <None Include="..\pipeline\dr\stages\lighting\lightNoShadowFrag.glsl" />
     <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl" />
@@ -140,6 +141,15 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\logs\zaZengine.log" />
+    <Text Include="..\scenes\physics.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\scenes\chess.xml" />
+    <Xml Include="..\scenes\doom3.xml" />
+    <Xml Include="..\scenes\gallery.xml" />
+    <Xml Include="..\scenes\hyperdrive.xml" />
+    <Xml Include="..\scenes\qualcomm.xml" />
+    <Xml Include="..\scenes\transparency.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

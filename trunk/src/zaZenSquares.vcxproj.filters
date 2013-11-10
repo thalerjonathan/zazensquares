@@ -61,6 +61,15 @@
     <Filter Include="Ressourcendateien\Logs">
       <UniqueIdentifier>{3ab8d4ce-0c08-4b3f-9656-6b5b38772dc2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Geom\Animated">
+      <UniqueIdentifier>{ffa6bf9e-474d-452b-9579-8ad419a5f294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Geom\Static">
+      <UniqueIdentifier>{4118ad61-34ec-4929-81d9-74a67aacc8c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Scenes">
+      <UniqueIdentifier>{d69315c4-4b6a-4d28-9ecc-d17d15dc1d93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -89,9 +98,6 @@
       <Filter>Ressourcendateien\Media\Materials</Filter>
     </None>
     <None Include="..\pipeline\dr\stages\geom\geomFrag.glsl">
-      <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom</Filter>
-    </None>
-    <None Include="..\pipeline\dr\stages\geom\geomVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom</Filter>
     </None>
     <None Include="..\pipeline\dr\stages\lighting\lightFrag.glsl">
@@ -133,10 +139,39 @@
     <None Include="..\pipeline\dr\stages\transparency\blendTranspVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Transparency</Filter>
     </None>
+    <None Include="..\pipeline\dr\stages\geom\animated\geomAnimVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom\Animated</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\geom\static\geomStaticVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom\Static</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\logs\zaZengine.log">
       <Filter>Ressourcendateien\Logs</Filter>
     </Text>
+    <Text Include="..\scenes\physics.txt">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\scenes\chess.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\doom3.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\gallery.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\hyperdrive.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\qualcomm.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\transparency.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
   </ItemGroup>
 </Project>
