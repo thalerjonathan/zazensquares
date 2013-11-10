@@ -17,6 +17,7 @@
       <graphics>
         <scene>
           <!-- no skybox: pitch black like doom3 :D -->
+          <skyBox path="SkyBoxes/Heaven" format="png"/>
         </scene>
       </graphics>
     </object>
@@ -51,6 +52,43 @@
       </graphics>
     </object>
 
+    <!-- proof that we can use two mesh-instances with same animations -->
+    <object name="Hellknight2">
+      <graphics>
+        <mesh file="doom3/hellknight/hellknight.md5mesh" />
+
+        <material id="HellknightMaterial" />
+
+        <orientation x="0" y="0" z="80" roll="90" heading="30" pitch="180" scale="0.5"/>
+
+        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
+      </graphics>
+    </object>
+
+    <object name="Hellknight3">
+      <graphics>
+        <mesh file="doom3/hellknight/hellknight.md5mesh" />
+
+        <material id="HellknightMaterial" />
+
+        <orientation x="0" y="0" z="-80" roll="90" heading="30" pitch="180" scale="0.5"/>
+
+        <animation directory="hellknight" extension=".md5anim" active="attack2"/>
+      </graphics>
+    </object>
+    
+    <object name="HellknightSkeleton">
+      <graphics>
+        <mesh file="../animations/hellknight/idle2.md5anim" />
+
+        <material id="HellknightMaterial" />
+
+        <orientation x="0" y="80" z="80" roll="90" heading="30" pitch="180" scale="0.5"/>
+
+        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
+      </graphics>
+    </object>
+    
     <object name="Imp">
       <graphics>
         <mesh file="doom3/imp/imp.md5mesh" />
