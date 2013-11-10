@@ -16,7 +16,7 @@
     <object name="Scene">
       <graphics>
         <scene>
-          <!-- no skybox: pitch black like doom3 :D -->
+          <skyBox path="SkyBoxes/Heaven" format="png"/>
         </scene>
       </graphics>
     </object>
@@ -39,39 +39,45 @@
       </graphics>
     </object>
 
-    <object name="Hellknight">
+    <object name="HouseWindowFront">
       <graphics>
-        <mesh file="doom3/hellknight/hellknight.md5mesh" />
+        <mesh file="floor_large.3DS" />
 
-        <material id="HellknightMaterial" />
+        <material id="TransparentGlass" />
 
-        <orientation x="0" y="0" z="0" roll="90" heading="30" pitch="180" scale="0.5"/>
-
-        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
+        <orientation x="0" y="50" z="-70" roll="0" heading="0" pitch="90" scale="0.5"/>
       </graphics>
     </object>
 
-    <object name="Imp">
+    <object name="HouseWindowTop">
       <graphics>
-        <mesh file="doom3/imp/imp.md5mesh" />
+        <mesh file="floor_large.3DS" />
 
-        <material id="ImpMaterial" />
+        <material id="TransparentGlassRefractOnly" />
 
-        <orientation x="80" y="0" z="0" roll="0" heading="30" pitch="180" scale="1"/>
-
-        <animation directory="imp" extension=".md5anim" active="idle1"/>
+        <orientation x="0" y="100" z="0" roll="0" heading="0" pitch="0" scale="0.5"/>
       </graphics>
     </object>
 
-    <object name="Cyberdemon">
+    <object name="ChurchWindowBack">
       <graphics>
-        <mesh file="doom3/cyberdemon/cyberdemon.md5mesh" />
+        <mesh file="floor_large.3DS" />
 
-        <material id="CyberdemonMaterial" />
+        <material id="TransparentCross" />
 
-        <orientation x="-100" y="0" z="0" roll="0" heading="30" pitch="180" scale="0.5"/>
+        <orientation x="0" y="50" z="70" roll="0" heading="0" pitch="90" scale="0.5"/>
+      </graphics>
+    </object>
 
-        <animation directory="cyberdemon" extension=".md5anim" active="idle"/>
+    <object name="Teapot">
+      <graphics>
+        <mesh file="teapot.3ds" />
+
+        <material id="JadePhong" />
+
+        <orientation x="0" y="10" z="0" roll="0" heading="0" pitch="180" scale="2"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
 
@@ -164,6 +170,5 @@
         <orientation x="200" y="0" z="200" roll="0" heading="0" pitch="0" />
       </graphics>
     </object>
-
   </objectList>
 </config>
