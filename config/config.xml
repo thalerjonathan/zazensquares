@@ -25,15 +25,25 @@
       <graphics>
         <camera view="PROJ" fov="90"/>
 
-        <orientation x="0" y="50" z="150" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="50" z="100" roll="0" heading="0" pitch="0"/>
       </graphics>
     </object>
 
-    <object name="SpotLight">
+    <object name="SpotLight_1">
       <graphics>
         <light type="SPOT"/>
 
-        <orientation x="0" y="25" z="70" roll="0" heading="0" pitch="-10"/>
+        <orientation x="-50" y="100" z="60" roll="0" heading="0" pitch="-40"/>
+
+        <shadowing fov="90" resMapX="2048" resMapY="2048"/>
+      </graphics>
+    </object>
+
+    <object name="SpotLight_2">
+      <graphics>
+        <light type="SPOT"/>
+
+        <orientation x="50" y="100" z="60" roll="0" heading="0" pitch="-40"/>
 
         <shadowing fov="90" resMapX="2048" resMapY="2048"/>
       </graphics>
@@ -45,61 +55,24 @@
 
         <material id="HellknightMaterial" />
 
-        <orientation x="0" y="0" z="0" roll="90" heading="30" pitch="180" scale="0.5"/>
+        <orientation x="0" y="0" z="0" roll="0" heading="0" pitch="180" scale="0.5"/>
 
         <animation directory="hellknight" extension=".md5anim" active="idle2"/>
       </graphics>
     </object>
 
-    <!-- proof that we can use two mesh-instances with same animations -->
-    <object name="Hellknight2">
+    <object name="Teapot">
       <graphics>
-        <mesh file="doom3/hellknight/hellknight.md5mesh" />
+        <mesh file="teapot.3ds" />
 
-        <material id="HellknightMaterial" />
+        <material id="JadePhong" />
 
-        <orientation x="0" y="0" z="80" roll="90" heading="30" pitch="180" scale="0.5"/>
+        <orientation x="0" y="10" z="-80" roll="0" heading="0" pitch="180" scale="2"/>
 
-        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
-      </graphics>
-    </object>
-
-    <object name="Hellknight3">
-      <graphics>
-        <mesh file="doom3/hellknight/hellknight.md5mesh" />
-
-        <material id="HellknightMaterial" />
-
-        <orientation x="0" y="0" z="-80" roll="90" heading="30" pitch="180" scale="0.5"/>
-
-        <animation directory="hellknight" extension=".md5anim" active="attack2"/>
+        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
     
-    <object name="Imp">
-      <graphics>
-        <mesh file="doom3/imp/imp.md5mesh" />
-
-        <material id="ImpMaterial" />
-
-        <orientation x="80" y="0" z="0" roll="0" heading="30" pitch="180" scale="1"/>
-
-        <animation directory="imp" extension=".md5anim" active="idle1"/>
-      </graphics>
-    </object>
-
-    <object name="Cyberdemon">
-      <graphics>
-        <mesh file="doom3/cyberdemon/cyberdemon.md5mesh" />
-
-        <material id="CyberdemonMaterial" />
-
-        <orientation x="-100" y="0" z="0" roll="0" heading="30" pitch="180" scale="0.5"/>
-
-        <animation directory="cyberdemon" extension=".md5anim" active="idle"/>
-      </graphics>
-    </object>
-
     <object name="FloorRow1Center">
       <graphics>
         <mesh file="floor_large.3DS" />
