@@ -64,6 +64,18 @@
     <Filter Include="Ressourcendateien\Scenes">
       <UniqueIdentifier>{d69315c4-4b6a-4d28-9ecc-d17d15dc1d93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube">
+      <UniqueIdentifier>{be3dbb00-5359-4071-846e-4526ed7494f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow\Planar">
+      <UniqueIdentifier>{2cc13654-ccee-46ed-8d31-a61ac6697358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\SinglePass">
+      <UniqueIdentifier>{0a4944f5-b2e0-4cbd-823b-32cf8d2d0f02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\MultiPass">
+      <UniqueIdentifier>{00a5042d-66db-4f39-91e1-68b3c2ed453a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -100,12 +112,6 @@
     <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
     </None>
-    <None Include="..\pipeline\dr\stages\shadowing\shadowFrag.glsl">
-      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow</Filter>
-    </None>
-    <None Include="..\pipeline\dr\stages\shadowing\shadowVert.glsl">
-      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow</Filter>
-    </None>
     <None Include="..\pipeline\dr\stages\lighting\lightNoShadowFrag.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
     </None>
@@ -135,6 +141,27 @@
     </None>
     <None Include="..\pipeline\dr\stages\geom\geomVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Geom</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\planar\shadowPlanarFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Planar</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\planar\shadowPlanarVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Planar</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\cube\multi\shadowCubeFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\MultiPass</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\cube\multi\shadowCubeVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\MultiPass</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\cube\single\shadowCubeFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\SinglePass</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\cube\single\shadowCubeGeom.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\SinglePass</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\shadowing\cube\single\shadowCubeVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\SinglePass</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

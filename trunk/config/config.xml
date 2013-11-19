@@ -58,7 +58,7 @@
         <shadowing resMapX="2048" resMapY="2048"/>
       </graphics>
     </object>
-    
+    <!---->
     <object name="Hellknight_POS_Z">
       <graphics>
         <mesh file="doom3/hellknight/hellknight.md5mesh" />
@@ -106,7 +106,7 @@
         <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
-        -->
+    -->
     <object name="Knot_POS_Y">
       <graphics>
         <mesh file="knot.3ds" />
