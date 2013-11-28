@@ -34,14 +34,14 @@
         <light type="POINT">
           <color r="1.0" g="1.0" b="1.0" />
 
-          <specular shininess="3.0" strength="60.0"  />
+          <specular shininess="100.0" strength="1.5"  />
 
           <attenuation constant="1.0" linear="0.0" quadratic="0.0" />
 
           <shadowing resMapX="2048" resMapY="2048"/>
         </light>
 
-        <orientation x="0" y="20" z="0" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="50" z="0" roll="0" heading="0" pitch="0"/>
       </graphics>
     </object>
 
@@ -98,8 +98,7 @@
 
         <material id="JadePhong" />
 
-        <orientation x="0" y="80" z="0" roll="0" heading="0" pitch="180" scale="2"/>
-
+        <orientation x="0" y="200" z="0" roll="0" heading="0" pitch="180" scale="2"/>
 
       </graphics>
     </object>

@@ -117,7 +117,7 @@
         <orientation x="-200" y="50" z="300" roll="0" heading="0" pitch="90" />
       </graphics>
     </object>
-    
+
     <object name="FloorRow1Center_UP">
       <graphics>
         <mesh file="floor_large.3DS" />
@@ -207,7 +207,7 @@
         <orientation x="200" y="150" z="0" roll="0" heading="0" pitch="0" />
       </graphics>
     </object>
-    
+
     <object name="FloorRow2Center_DOWN">
       <graphics>
         <mesh file="floor_large.3DS" />
@@ -267,7 +267,7 @@
         <orientation x="200" y="150" z="200" roll="0" heading="0" pitch="0" />
       </graphics>
     </object>
-    
+
     <object name="FloorRow3Center_DOWN">
       <graphics>
         <mesh file="floor_large.3DS" />
