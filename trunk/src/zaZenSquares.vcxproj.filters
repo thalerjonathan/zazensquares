@@ -191,5 +191,14 @@
     <Xml Include="..\scenes\transparency.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
+    <Xml Include="..\scenes\pointLight.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\teapot_spot.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\hellknight_spot.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

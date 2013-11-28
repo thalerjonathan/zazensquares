@@ -34,7 +34,7 @@
         <light type="POINT">
           <color r="1.0" g="1.0" b="1.0" />
 
-          <specular shininess="100.0" strength="1.5"  />
+          <specular shininess="3.0" strength="60.0"  />
 
           <attenuation constant="1.0" linear="0.0" quadratic="0.0" />
 
@@ -68,7 +68,7 @@
         <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
-    <!--
+
     <object name="Imp_POS_X">
       <graphics>
         <mesh file="doom3/imp/imp.md5mesh" />
@@ -80,7 +80,7 @@
         <animation directory="imp" extension=".md5anim" active="idle1"/>
       </graphics>
     </object>
--->
+
     <object name="Sphere_NEG_X">
       <graphics>
         <mesh file="geoSphere.3ds" />
