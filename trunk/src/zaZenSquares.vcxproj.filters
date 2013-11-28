@@ -200,5 +200,8 @@
     <Xml Include="..\scenes\hellknight_spot.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
+    <Xml Include="..\scenes\knot_spot.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
   </ItemGroup>
 </Project>
