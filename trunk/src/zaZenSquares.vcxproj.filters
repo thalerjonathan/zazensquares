@@ -182,9 +182,6 @@
     <Xml Include="..\scenes\gallery.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
-    <Xml Include="..\scenes\hyperdrive.xml">
-      <Filter>Ressourcendateien\Scenes</Filter>
-    </Xml>
     <Xml Include="..\scenes\qualcomm.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
@@ -200,7 +197,10 @@
     <Xml Include="..\scenes\hellknight_spot.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
-    <Xml Include="..\scenes\knot_spot.xml">
+    <Xml Include="..\scenes\teapot_directional.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\knot_point.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
   </ItemGroup>

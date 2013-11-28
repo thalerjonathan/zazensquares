@@ -154,10 +154,10 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <Xml Include="..\scenes\doom3.xml" />
     <Xml Include="..\scenes\gallery.xml" />
     <Xml Include="..\scenes\hellknight_spot.xml" />
-    <Xml Include="..\scenes\hyperdrive.xml" />
-    <Xml Include="..\scenes\knot_spot.xml" />
+    <Xml Include="..\scenes\knot_point.xml" />
     <Xml Include="..\scenes\pointLight.xml" />
     <Xml Include="..\scenes\qualcomm.xml" />
+    <Xml Include="..\scenes\teapot_directional.xml" />
     <Xml Include="..\scenes\teapot_spot.xml" />
     <Xml Include="..\scenes\transparency.xml" />
   </ItemGroup>

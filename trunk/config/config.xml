@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 
 <config>
   <coreScript file="scripts/core/core.lua"/>
@@ -16,7 +16,7 @@
     <object name="Scene">
       <graphics>
         <scene>
-          <!-- <skyBox path="SkyBoxes/Heaven" format="png"/> -->
+          <!-- no skybox: pitch black like doom3 :D -->
         </scene>
       </graphics>
     </object>
@@ -41,114 +41,72 @@
           <shadowing resMapX="2048" resMapY="2048"/>
         </light>
 
-        <orientation x="0" y="40" z="0" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="70" z="0" roll="0" heading="0" pitch="0"/>
       </graphics>
     </object>
 
-    <object name="Knot">
+    <object name="Hellknight">
       <graphics>
-        <mesh file="knot.3ds" />
+        <mesh file="doom3/hellknight/hellknight.md5mesh" />
 
-        <material id="JadePhong" />
+        <material id="HellknightMaterial" />
 
-        <orientation x="0" y="40" z="0" roll="0" heading="0" pitch="180" scale="2"/>
+        <orientation x="0" y="0" z="0" roll="90" heading="30" pitch="180" scale="0.5"/>
 
-        <!-- <animation roll="0" heading="0" pitch="0"/> -->
-        <animation roll="45" heading="45" pitch="45"/>
+        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
       </graphics>
     </object>
 
-    <object name="WallCenter_NEG_Z">
+    <!-- proof that we can use two mesh-instances with same animations -->
+    <object name="Hellknight2">
       <graphics>
-        <mesh file="floor_large.3DS" />
+        <mesh file="doom3/hellknight/hellknight.md5mesh" />
 
-        <material id="WoodPlanks" />
+        <material id="HellknightMaterial" />
 
-        <orientation x="0" y="50" z="-300" roll="0" heading="0" pitch="90" />
+        <orientation x="0" y="0" z="80" roll="90" heading="30" pitch="180" scale="0.5"/>
+
+        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
       </graphics>
     </object>
 
-    <object name="WallRight_NEG_Z">
+    <object name="Hellknight3">
       <graphics>
-        <mesh file="floor_large.3DS" />
+        <mesh file="doom3/hellknight/hellknight.md5mesh" />
 
-        <material id="WoodPlanks" />
+        <material id="HellknightMaterial" />
 
-        <orientation x="200" y="50" z="-300" roll="0" heading="0" pitch="90" />
+        <orientation x="0" y="0" z="-80" roll="90" heading="30" pitch="180" scale="0.5"/>
+
+        <animation directory="hellknight" extension=".md5anim" active="attack2"/>
       </graphics>
     </object>
 
-    <object name="WallLeft_NEG_Z">
+    <object name="Imp">
       <graphics>
-        <mesh file="floor_large.3DS" />
+        <mesh file="doom3/imp/imp.md5mesh" />
 
-        <material id="WoodPlanks" />
+        <material id="ImpMaterial" />
 
-        <orientation x="-200" y="50" z="-300" roll="0" heading="0" pitch="90" />
+        <orientation x="80" y="0" z="0" roll="0" heading="30" pitch="180" scale="1"/>
+
+        <animation directory="imp" extension=".md5anim" active="idle1"/>
       </graphics>
     </object>
 
-    <object name="WallCenter_POS_Z">
+    <object name="Cyberdemon">
       <graphics>
-        <mesh file="floor_large.3DS" />
+        <mesh file="doom3/cyberdemon/cyberdemon.md5mesh" />
 
-        <material id="WoodPlanks" />
+        <material id="CyberdemonMaterial" />
 
-        <orientation x="0" y="50" z="300" roll="0" heading="0" pitch="90" />
+        <orientation x="-100" y="0" z="0" roll="0" heading="30" pitch="180" scale="0.5"/>
+
+        <animation directory="cyberdemon" extension=".md5anim" active="idle"/>
       </graphics>
     </object>
 
-    <object name="WallRight_POS_Z">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="200" y="50" z="300" roll="0" heading="0" pitch="90" />
-      </graphics>
-    </object>
-
-    <object name="WallLeft_POS_Z">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="-200" y="50" z="300" roll="0" heading="0" pitch="90" />
-      </graphics>
-    </object>
-    
-    <object name="FloorRow1Center_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="0" y="150" z="-200" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow1Left_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="-200" y="150" z="-200" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow1Right_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="200" y="150" z="-200" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow1Center_DOWN">
+    <object name="FloorRow1Center">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -158,7 +116,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow1Left_DOWN">
+    <object name="FloorRow1Left">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -168,7 +126,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow1Right_DOWN">
+    <object name="FloorRow1Right">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -178,37 +136,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow2Center_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="0" y="150" z="0" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow2Left_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="-200" y="150" z="0" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow2Right_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="200" y="150" z="0" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-    
-    <object name="FloorRow2Center_DOWN">
+    <object name="FloorRow2Center">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -218,7 +146,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow2Left_DOWN">
+    <object name="FloorRow2Left">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -228,7 +156,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow2Right_DOWN">
+    <object name="FloorRow2Right">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -238,37 +166,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow3Center_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="0" y="150" z="200" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow3Left_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="-200" y="150" z="200" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-
-    <object name="FloorRow3Right_UP">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="WoodPlanks" />
-
-        <orientation x="200" y="150" z="200" roll="0" heading="0" pitch="0" />
-      </graphics>
-    </object>
-    
-    <object name="FloorRow3Center_DOWN">
+    <object name="FloorRow3Center">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -278,7 +176,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow3Left_DOWN">
+    <object name="FloorRow3Left">
       <graphics>
         <mesh file="floor_large.3DS" />
 
@@ -288,7 +186,7 @@
       </graphics>
     </object>
 
-    <object name="FloorRow3Right_DOWN">
+    <object name="FloorRow3Right">
       <graphics>
         <mesh file="floor_large.3DS" />
 
