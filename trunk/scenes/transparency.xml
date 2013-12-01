@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 
 <config>
   <coreScript file="scripts/core/core.lua"/>
@@ -31,7 +31,7 @@
 
     <object name="SpotLight">
       <graphics>
-        <light type="SPOT">
+        <light type="DIRECTIONAL">
           <color r="1.0" g="1.0" b="1.0" />
 
           <specular shininess="100.0" strength="1.5"  />
@@ -176,5 +176,6 @@
         <orientation x="200" y="0" z="200" roll="0" heading="0" pitch="0" />
       </graphics>
     </object>
+
   </objectList>
 </config>
