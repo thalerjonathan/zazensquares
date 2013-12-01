@@ -147,12 +147,9 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\logs\zaZengine.log" />
-    <Text Include="..\scenes\physics.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\scenes\chess.xml" />
     <Xml Include="..\scenes\doom3.xml" />
-    <Xml Include="..\scenes\gallery.xml" />
     <Xml Include="..\scenes\hellknight_spot.xml" />
     <Xml Include="..\scenes\knot_point.xml" />
     <Xml Include="..\scenes\pointLight.xml" />

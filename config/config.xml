@@ -16,7 +16,7 @@
     <object name="Scene">
       <graphics>
         <scene>
-          <!-- no skybox: pitch black like doom3 :D -->
+          <skyBox path="SkyBoxes/Heaven" format="png"/>
         </scene>
       </graphics>
     </object>
@@ -29,19 +29,49 @@
       </graphics>
     </object>
 
-    <object name="PointLight">
+    <object name="SpotLight">
       <graphics>
-        <light type="POINT">
+        <light type="DIRECTIONAL">
           <color r="1.0" g="1.0" b="1.0" />
 
           <specular shininess="100.0" strength="1.5"  />
 
-          <attenuation constant="1.0" linear="0.0" quadratic="0.0" />
+          <attenuation constant="1.0" linear="0.0001" quadratic="0.0" />
 
-          <shadowing resMapX="2048" resMapY="2048"/>
+          <shadowing fov="90" resMapX="2048" resMapY="2048"/>
         </light>
 
-        <orientation x="0" y="70" z="0" roll="0" heading="0" pitch="0"/>
+        <orientation x="0" y="25" z="70" roll="0" heading="0" pitch="-10"/>
+      </graphics>
+    </object>
+
+    <object name="HouseWindowFront">
+      <graphics>
+        <mesh file="floor_large.3DS" />
+
+        <material id="TransparentGlass" />
+
+        <orientation x="0" y="50" z="-70" roll="0" heading="0" pitch="90" scale="0.5"/>
+      </graphics>
+    </object>
+
+    <object name="HouseWindowTop">
+      <graphics>
+        <mesh file="floor_large.3DS" />
+
+        <material id="TransparentGlassRefractOnly" />
+
+        <orientation x="0" y="100" z="0" roll="0" heading="0" pitch="0" scale="0.5"/>
+      </graphics>
+    </object>
+
+    <object name="ChurchWindowBack">
+      <graphics>
+        <mesh file="floor_large.3DS" />
+
+        <material id="TransparentCross" />
+
+        <orientation x="0" y="50" z="70" roll="0" heading="0" pitch="90" scale="0.5"/>
       </graphics>
     </object>
 
@@ -51,61 +81,12 @@
 
         <material id="HellknightMaterial" />
 
-        <orientation x="0" y="0" z="0" roll="90" heading="30" pitch="180" scale="0.5"/>
+        <orientation x="10" y="0" z="0" roll="0" heading="0" pitch="180" scale="0.5"/>
 
-        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
+        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
-
-    <!-- proof that we can use two mesh-instances with same animations -->
-    <object name="Hellknight2">
-      <graphics>
-        <mesh file="doom3/hellknight/hellknight.md5mesh" />
-
-        <material id="HellknightMaterial" />
-
-        <orientation x="0" y="0" z="80" roll="90" heading="30" pitch="180" scale="0.5"/>
-
-        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
-      </graphics>
-    </object>
-
-    <object name="Hellknight3">
-      <graphics>
-        <mesh file="doom3/hellknight/hellknight.md5mesh" />
-
-        <material id="HellknightMaterial" />
-
-        <orientation x="0" y="0" z="-80" roll="90" heading="30" pitch="180" scale="0.5"/>
-
-        <animation directory="hellknight" extension=".md5anim" active="attack2"/>
-      </graphics>
-    </object>
-
-    <object name="Imp">
-      <graphics>
-        <mesh file="doom3/imp/imp.md5mesh" />
-
-        <material id="ImpMaterial" />
-
-        <orientation x="80" y="0" z="0" roll="0" heading="30" pitch="180" scale="1"/>
-
-        <animation directory="imp" extension=".md5anim" active="idle1"/>
-      </graphics>
-    </object>
-
-    <object name="Cyberdemon">
-      <graphics>
-        <mesh file="doom3/cyberdemon/cyberdemon.md5mesh" />
-
-        <material id="CyberdemonMaterial" />
-
-        <orientation x="-100" y="0" z="0" roll="0" heading="30" pitch="180" scale="0.5"/>
-
-        <animation directory="cyberdemon" extension=".md5anim" active="idle"/>
-      </graphics>
-    </object>
-
+    
     <object name="FloorRow1Center">
       <graphics>
         <mesh file="floor_large.3DS" />
@@ -195,6 +176,6 @@
         <orientation x="200" y="0" z="200" roll="0" heading="0" pitch="0" />
       </graphics>
     </object>
-
+    
   </objectList>
 </config>
