@@ -128,8 +128,8 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\pipeline\dr\stages\geom\skyBoxFrag.glsl" />
     <None Include="..\pipeline\dr\stages\geom\skyBoxVert.glsl" />
     <None Include="..\pipeline\dr\stages\lighting\lightFrag.glsl" />
-    <None Include="..\pipeline\dr\stages\lighting\lightNoShadowFrag.glsl" />
     <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl" />
+    <None Include="..\pipeline\dr\stages\lighting\stencilVolume\lightStencilVolVert.glsl" />
     <None Include="..\pipeline\dr\stages\shadowing\cube\multi\shadowCubeFrag.glsl" />
     <None Include="..\pipeline\dr\stages\shadowing\cube\multi\shadowCubeVert.glsl" />
     <None Include="..\pipeline\dr\stages\shadowing\cube\single\shadowCubeFrag.glsl" />
@@ -144,6 +144,8 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\pipeline\programConfig.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="profiling_debug.nvact" />
+    <None Include="profiling_release.nvact" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\logs\zaZengine.log" />
@@ -152,11 +154,13 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <Xml Include="..\scenes\doom3.xml" />
     <Xml Include="..\scenes\hellknight_spot.xml" />
     <Xml Include="..\scenes\knot_point.xml" />
-    <Xml Include="..\scenes\pointLight.xml" />
+    <Xml Include="..\scenes\pointlight_all.xml" />
     <Xml Include="..\scenes\qualcomm.xml" />
     <Xml Include="..\scenes\teapot_directional.xml" />
     <Xml Include="..\scenes\teapot_spot.xml" />
-    <Xml Include="..\scenes\transparency.xml" />
+    <Xml Include="..\scenes\transparency.xml">
+      <SubType>Designer</SubType>
+    </Xml>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

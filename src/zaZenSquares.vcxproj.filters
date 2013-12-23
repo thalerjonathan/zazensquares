@@ -76,6 +76,12 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\MultiPass">
       <UniqueIdentifier>{00a5042d-66db-4f39-91e1-68b3c2ed453a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Profiling">
+      <UniqueIdentifier>{2dfb8cae-1d0c-4e45-a34e-858de7255d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Light\StencilVolume">
+      <UniqueIdentifier>{443aa9f8-8d59-4bb1-9ef7-4d86986dcc5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -110,9 +116,6 @@
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
     </None>
     <None Include="..\pipeline\dr\stages\lighting\lightVert.glsl">
-      <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
-    </None>
-    <None Include="..\pipeline\dr\stages\lighting\lightNoShadowFrag.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light</Filter>
     </None>
     <None Include="..\pipeline\dr\stages\geom\skyBoxFrag.glsl">
@@ -163,6 +166,15 @@
     <None Include="..\pipeline\dr\stages\shadowing\cube\single\shadowCubeVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Shadow\Cube\SinglePass</Filter>
     </None>
+    <None Include="profiling_debug.nvact">
+      <Filter>Ressourcendateien\Profiling</Filter>
+    </None>
+    <None Include="profiling_release.nvact">
+      <Filter>Ressourcendateien\Profiling</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\lighting\stencilVolume\lightStencilVolVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Light\StencilVolume</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\logs\zaZengine.log">
@@ -179,9 +191,6 @@
     <Xml Include="..\scenes\transparency.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
-    <Xml Include="..\scenes\pointLight.xml">
-      <Filter>Ressourcendateien\Scenes</Filter>
-    </Xml>
     <Xml Include="..\scenes\teapot_spot.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
@@ -192,6 +201,9 @@
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
     <Xml Include="..\scenes\knot_point.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\pointlight_all.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
   </ItemGroup>
