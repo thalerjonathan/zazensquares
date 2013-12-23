@@ -16,7 +16,6 @@
     <object name="Scene">
       <graphics>
         <scene>
-          <!-- <skyBox path="SkyBoxes/Heaven" format="png"/> -->
         </scene>
       </graphics>
     </object>
@@ -89,6 +88,7 @@
 
         <orientation x="-80" y="30" z="0" roll="0" heading="0" pitch="180" scale="2"/>
 
+        <animation roll="0" heading="30" pitch="0"/>
       </graphics>
     </object>
 
@@ -100,6 +100,7 @@
 
         <orientation x="0" y="100" z="0" roll="0" heading="0" pitch="180" scale="2"/>
 
+        <animation roll="45" heading="45" pitch="45"/>
       </graphics>
     </object>
 

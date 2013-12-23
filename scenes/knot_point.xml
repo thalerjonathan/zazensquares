@@ -16,7 +16,7 @@
     <object name="Scene">
       <graphics>
         <scene>
-          <!-- <skyBox path="SkyBoxes/Heaven" format="png"/> -->
+          <skyBox path="SkyBoxes/Heaven" format="png"/>
         </scene>
       </graphics>
     </object>
