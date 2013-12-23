@@ -200,5 +200,8 @@
     <Xml Include="..\scenes\pointlight_all.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
+    <Xml Include="..\scenes\transparency_environmental.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

@@ -72,4 +72,9 @@
       <params blendingFactor="0" refractionFator="0.05"/>
     </type>
   </material>
+
+  <material name="ChromaticAberrationEnv">
+    <type id="ENVIRONMENTAL">
+    </type>
+  </material>
 </materials>
