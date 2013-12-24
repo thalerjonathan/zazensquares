@@ -57,25 +57,15 @@
       </graphics>
     </object>
 
-    <object name="Teapot">
+    <object name="Sphere">
       <graphics>
-        <mesh file="teapot.3ds" />
+        <mesh file="geoSphere.3ds" />
 
         <material id="ChromaticAberrationEnv" />
 
-        <orientation x="0" y="40" z="0" roll="0" heading="0" pitch="180" scale="1.5"/>
+        <orientation x="0" y="40" z="0" roll="0" heading="0" pitch="180" scale="2"/>
 
-        <animation roll="0" heading="0" pitch="45"/>
-      </graphics>
-    </object>
-
-    <object name="ChurchWindowBack">
-      <graphics>
-        <mesh file="floor_large.3DS" />
-
-        <material id="TransparentCross" />
-
-        <orientation x="0" y="50" z="70" roll="0" heading="0" pitch="90" scale="0.5"/>
+        <animation roll="0" heading="0" pitch="0"/>
       </graphics>
     </object>
 

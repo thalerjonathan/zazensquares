@@ -82,6 +82,12 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Light\StencilVolume">
       <UniqueIdentifier>{443aa9f8-8d59-4bb1-9ef7-4d86986dcc5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Environmental">
+      <UniqueIdentifier>{f3888f24-f90a-4e55-8026-c7eeacc97b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Environmental\Cube">
+      <UniqueIdentifier>{9d425f98-6a57-4229-9eda-504690f8f8ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -168,6 +174,12 @@
     </None>
     <None Include="..\pipeline\dr\stages\lighting\stencilVolume\lightStencilVolVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light\StencilVolume</Filter>
+    </None>
+    <None Include="..\..\zazengine\pipeline\dr\stages\environmental\cube\envCubeFrag.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Environmental\Cube</Filter>
+    </None>
+    <None Include="..\..\zazengine\pipeline\dr\stages\environmental\cube\envCubeVert.glsl">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\Environmental\Cube</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
