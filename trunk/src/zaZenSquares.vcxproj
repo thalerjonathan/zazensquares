@@ -116,8 +116,6 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <ClInclude Include="logic\ZazenSquaresGOFactory.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\zazengine\pipeline\dr\stages\environmental\cube\envCubeFrag.glsl" />
-    <None Include="..\..\zazengine\pipeline\dr\stages\environmental\cube\envCubeVert.glsl" />
     <None Include="..\config\config.xml">
       <SubType>Designer</SubType>
     </None>
@@ -125,6 +123,8 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\media\materials\materials.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="..\pipeline\dr\stages\environmental\cube\envCubeFrag.glsl" />
+    <None Include="..\pipeline\dr\stages\environmental\cube\envCubeVert.glsl" />
     <None Include="..\pipeline\dr\stages\geom\geomFrag.glsl" />
     <None Include="..\pipeline\dr\stages\geom\geomVert.glsl" />
     <None Include="..\pipeline\dr\stages\geom\skyBoxFrag.glsl" />

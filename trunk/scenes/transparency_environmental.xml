@@ -45,18 +45,6 @@
       </graphics>
     </object>
 
-    <object name="Hellknight">
-      <graphics>
-        <mesh file="doom3/hellknight/hellknight.md5mesh" />
-
-        <material id="HellknightMaterial" />
-
-        <orientation x="0" y="0" z="-80" roll="0" heading="0" pitch="180" scale="0.5"/>
-
-        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
-      </graphics>
-    </object>
-
     <object name="Sphere">
       <graphics>
         <mesh file="geoSphere.3ds" />
@@ -66,6 +54,66 @@
         <orientation x="0" y="40" z="0" roll="0" heading="0" pitch="180" scale="2"/>
 
         <animation roll="0" heading="0" pitch="0"/>
+      </graphics>
+    </object>
+
+    <object name="Hellknight_POS_Z">
+      <graphics>
+        <mesh file="doom3/hellknight/hellknight.md5mesh" />
+
+        <material id="HellknightMaterial" />
+
+        <orientation x="0" y="0" z="80" roll="0" heading="0" pitch="180" scale="0.5"/>
+
+        <animation directory="hellknight" extension=".md5anim" active="idle2"/>
+      </graphics>
+    </object>
+
+    <object name="Teapot_NEG_Z">
+      <graphics>
+        <mesh file="teapot.3ds" />
+
+        <material id="JadePhong" />
+
+        <orientation x="0" y="10" z="-80" roll="0" heading="0" pitch="180" scale="2"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
+      </graphics>
+    </object>
+
+    <object name="Imp_POS_X">
+      <graphics>
+        <mesh file="doom3/imp/imp.md5mesh" />
+
+        <material id="ImpMaterial" />
+
+        <orientation x="80" y="0" z="0" roll="0" heading="0" pitch="270" scale="0.5"/>
+
+        <animation directory="imp" extension=".md5anim" active="idle1"/>
+      </graphics>
+    </object>
+
+    <object name="Sphere_NEG_X">
+      <graphics>
+        <mesh file="geoSphere.3ds" />
+
+        <material id="ObsidianPhong" />
+
+        <orientation x="-80" y="30" z="0" roll="0" heading="0" pitch="180" scale="2"/>
+
+        <animation roll="0" heading="30" pitch="0"/>
+      </graphics>
+    </object>
+
+    <object name="Knot_POS_Y">
+      <graphics>
+        <mesh file="knot.3ds" />
+
+        <material id="JadePhong" />
+
+        <orientation x="0" y="100" z="0" roll="0" heading="0" pitch="180" scale="2"/>
+
+        <animation roll="45" heading="45" pitch="45"/>
       </graphics>
     </object>
 
