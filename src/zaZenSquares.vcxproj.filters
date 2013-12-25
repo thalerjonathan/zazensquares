@@ -175,10 +175,10 @@
     <None Include="..\pipeline\dr\stages\lighting\stencilVolume\lightStencilVolVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Light\StencilVolume</Filter>
     </None>
-    <None Include="..\..\zazengine\pipeline\dr\stages\environmental\cube\envCubeFrag.glsl">
+    <None Include="..\pipeline\dr\stages\environmental\cube\envCubeFrag.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Environmental\Cube</Filter>
     </None>
-    <None Include="..\..\zazengine\pipeline\dr\stages\environmental\cube\envCubeVert.glsl">
+    <None Include="..\pipeline\dr\stages\environmental\cube\envCubeVert.glsl">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\Environmental\Cube</Filter>
     </None>
   </ItemGroup>
