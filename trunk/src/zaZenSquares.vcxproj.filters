@@ -88,6 +88,9 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\Environmental\Cube">
       <UniqueIdentifier>{9d425f98-6a57-4229-9eda-504690f8f8ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\PostProcessing">
+      <UniqueIdentifier>{b87721b5-eae9-47a4-ab0f-be4b24e3e0ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
