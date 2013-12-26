@@ -131,6 +131,8 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <None Include="..\pipeline\dr\stages\nullShader.frag" />
     <None Include="..\pipeline\dr\stages\postprocessing\environmental\cube\envCube.frag" />
     <None Include="..\pipeline\dr\stages\postprocessing\environmental\cube\envCube.vert" />
+    <None Include="..\pipeline\dr\stages\postprocessing\environmental\planar\envPlanar.frag" />
+    <None Include="..\pipeline\dr\stages\postprocessing\environmental\planar\envPlanar.vert" />
     <None Include="..\pipeline\dr\stages\postprocessing\transparency\classic\transparencyClassic.frag" />
     <None Include="..\pipeline\dr\stages\postprocessing\transparency\classic\transparencyClassic.vert" />
     <None Include="..\pipeline\dr\stages\postprocessing\transparency\refractive\transparencyRefractive.frag" />
@@ -154,6 +156,8 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\scenes\doom3.xml" />
+    <Xml Include="..\scenes\environment_cube.xml" />
+    <Xml Include="..\scenes\environment_planar.xml" />
     <Xml Include="..\scenes\hellknight_spot.xml" />
     <Xml Include="..\scenes\knot_point.xml" />
     <Xml Include="..\scenes\pointlight_all.xml" />
@@ -163,7 +167,6 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <Xml Include="..\scenes\transparency.xml">
       <SubType>Designer</SubType>
     </Xml>
-    <Xml Include="..\scenes\transparency_environmental.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

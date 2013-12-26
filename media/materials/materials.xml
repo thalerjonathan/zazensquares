@@ -81,7 +81,12 @@
   </material>
 
   <material name="ChromaticAberrationEnv">
-    <type id="ENVIRONMENTAL">
+    <type id="ENVIRONMENT_CUBE">
+    </type>
+  </material>
+
+  <material name="PlanarMirror">
+    <type id="ENVIRONMENT_PLANAR">
     </type>
   </material>
 </materials>

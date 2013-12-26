@@ -97,6 +97,9 @@
     <Filter Include="Ressourcendateien\Pipeline\DR\Stages\PostProcessing\Transparency\Refractive">
       <UniqueIdentifier>{30c1ca55-a054-4908-83d7-b1415896e81a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\Pipeline\DR\Stages\PostProcessing\Environmental\Planar">
+      <UniqueIdentifier>{013f61b7-a15f-4e7e-a049-80cdb07e0343}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -196,6 +199,12 @@
     <None Include="..\pipeline\dr\stages\postprocessing\environmental\cube\envCube.vert">
       <Filter>Ressourcendateien\Pipeline\DR\Stages\PostProcessing\Environmental\Cube</Filter>
     </None>
+    <None Include="..\pipeline\dr\stages\postprocessing\environmental\planar\envPlanar.frag">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\PostProcessing\Environmental\Planar</Filter>
+    </None>
+    <None Include="..\pipeline\dr\stages\postprocessing\environmental\planar\envPlanar.vert">
+      <Filter>Ressourcendateien\Pipeline\DR\Stages\PostProcessing\Environmental\Planar</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\logs\zaZengine.log">
@@ -227,7 +236,10 @@
     <Xml Include="..\scenes\pointlight_all.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
-    <Xml Include="..\scenes\transparency_environmental.xml">
+    <Xml Include="..\scenes\environment_cube.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
+    <Xml Include="..\scenes\environment_planar.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
   </ItemGroup>
