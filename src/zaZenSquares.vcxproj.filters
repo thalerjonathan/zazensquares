@@ -242,5 +242,8 @@
     <Xml Include="..\scenes\environment_planar.xml">
       <Filter>Ressourcendateien\Scenes</Filter>
     </Xml>
+    <Xml Include="..\scenes\depth_sss.xml">
+      <Filter>Ressourcendateien\Scenes</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

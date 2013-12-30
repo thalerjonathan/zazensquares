@@ -155,6 +155,7 @@ xcopy $(ZAZENGINE_PATH)\pipeline $(SolutionDir)..\pipeline /S /C /Q /E /Y</Comma
     <Text Include="..\logs\zaZengine.log" />
   </ItemGroup>
   <ItemGroup>
+    <Xml Include="..\scenes\depth_sss.xml" />
     <Xml Include="..\scenes\doom3.xml" />
     <Xml Include="..\scenes\environment_cube.xml" />
     <Xml Include="..\scenes\environment_planar.xml" />
