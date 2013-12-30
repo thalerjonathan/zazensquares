@@ -44,6 +44,18 @@
       </graphics>
     </object>
 
+    <object name="Sphere">
+      <graphics>
+        <mesh file="geoSphere.3ds" />
+
+        <material id="ChromaticAberrationEnv" />
+
+        <orientation x="0" y="40" z="0" roll="0" heading="0" pitch="180" scale="1"/>
+
+        <animation roll="0" heading="0" pitch="0"/>
+      </graphics>
+    </object>
+    
     <object name="Hellknight_POS_Z">
       <graphics>
         <mesh file="doom3/hellknight/hellknight.md5mesh" />
